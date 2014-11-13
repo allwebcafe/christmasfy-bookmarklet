@@ -20,6 +20,7 @@
 
 if ( document.location.hostname == 'allwebcafe.com' || document.location.hostname == 'www.allwebcafe.com' ) {
 	/* Replace the Hero image with the Christmas-y fireplace and stockings image */
+	$('html, body').animate({ scrollTop: 0 }, 'slow');
 	$('.mc-image').css('background-image', 'url(//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/fp-test.jpg)');
 	
 }
