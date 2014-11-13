@@ -22,9 +22,23 @@ if ( document.location.hostname == 'allwebcafe.com' || document.location.hostnam
 	/* Replace the Hero image with the Christmas-y fireplace and stockings image */
 	$('html, body').animate({ scrollTop: 0 }, 'slow');
 	$('.mc-image').css('background-image', 'url(//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/fp-test.jpg)');
-	
-}
-else {
+	/* Loop through the images on the allwebcafe site. If they are headshots, replace them with Burl Ives' claymation Christmas characters */
+	$('img').each(function() {
+		if ( $(this).attr('src') == '/images/member_photos/photo_10.jpg' ) { /* If this is Brandon Morse */
+			$(this).attr('src', '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/brandon-morse.jpg');
+		} else if ( $(this).attr('src') == '/images/member_photos/photo_17.jpg' ) { /* If this is Jan Waldeck */
+			$(this).attr('src', '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/jan-waldeck.jpg');
+		} else if ( $(this).attr('src') == '/images/member_photos/photo_23.jpg' ) { /* If this is Paul Manz */
+			$(this).attr('src', '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/paul-manz.jpg');
+		} else if ( $(this).attr('src') == '/images/member_photos/photo_16.jpg' ) { /* If this is Nekeidra Filinov */
+			$(this).attr('src', '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/nekeidra-filinov.jpg');
+		} else if ( $(this).attr('src') == '/images/member_photos/photo_26.jpg' ) { /* If this is Kristin Conran */
+			$(this).attr('src', '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/kristin-conran.jpg');
+		} else if ( $(this).attr('src') == '/images/member_photos/photo_4.jpg' ) { /* If this is Steve Williams */
+			$(this).attr('src', '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/steve-williams.jpg');
+		}
+	});
+} else {
 	$('body').wrapInner('<div></div>');
 }
 
