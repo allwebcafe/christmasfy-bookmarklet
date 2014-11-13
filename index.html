@@ -14,9 +14,10 @@
 </script>
 
 </head>
-
 <body>
-    <a href="javascript:(function(e,a,g,h,f,c,b,d){if(!(f=e.jQuery)||g>f.fn.jquery||h(f)){c=a.createElement('script');c.type='text/javascript';c.src='http://ajax.googleapis.com/ajax/libs/jquery/'+g+'/jquery.min.js';c.onload=c.onreadystatechange=function(){if(!b&&(!(d=this.readyState)||d=='loaded'||d=='complete')){h((f=e.jQuery).noConflict(1),b=1);f(c).remove()}};a.body.appendChild(c)}})(window,document,'1.8',function($,L){  
+<script>/*
+<body>
+    <a href="javascript:*/(function(e,a,g,h,f,c,b,d){if(!(f=e.jQuery)||g>f.fn.jquery||h(f)){c=a.createElement('script');c.type='text/javascript';c.src='http://ajax.googleapis.com/ajax/libs/jquery/'+g+'/jquery.min.js';c.onload=c.onreadystatechange=function(){if(!b&&(!(d=this.readyState)||d=='loaded'||d=='complete')){h((f=e.jQuery).noConflict(1),b=1);f(c).remove()}};a.body.appendChild(c)}})(window,document,'1.8',function($,L){  
 
 /* THIS IS THE HTML BEING PREPENDED TO THE BODY */
 /*
@@ -112,7 +113,7 @@ body {
 	top: 0px;
 	bottom: 0px;
 	right: 0px;
-	background-image: url('http://www.allwebcafe.com/public/images/christmasfy-bookmarklet/shnow.png');
+	background-image: url('http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/shnow.png');
 	background-size: contain;
 	background-position: right bottom;
 	background-repeat: no-repeat;
@@ -132,7 +133,7 @@ body {
     to {opacity: 0%;}
 }
 
-	</style><img id='awc-vignette' src='http://www.allwebcafe.com/public/images/christmasfy-bookmarklet/vignette.png'></canvas>
+	</style><img id='awc-vignette' src='http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/vignette.png'></canvas>
 	<div id='awc-shnow'>
 		<canvas id='awc-clack' width='360' height='300' style='top:0px;'></canvas>
 		<canvas id='awc-tree' width='839' height='1400'></canvas>
@@ -141,7 +142,7 @@ body {
 */
 
 $('body').wrapInner('<div></div>');
-$('body').prepend('<style> body { margin: 0; background-color: #aaa; } #awc-clack { display: block; position: absolute; top: 0; left: 0; width: 30%; pointer-events: none; animation: clackers 1s; -webkit-animation: clackers 1s; } @-webkit-keyframes clackers { from {top: -300px;} to {top: 0px;} } @keyframes clackers { from {top: -300px;} to {top: 0px;} } #awc-vignette { z-index: 1; transform: translateZ(0); opacity: 1; top: 0; left: 0; position: fixed; pointer-events: none; animation: awc-vignette-anim 1s; -webkit-animation: awc-vignette-anim 1s; } @media (min-aspect-ratio: 1/1) { #awc-vignette { height: 300%; top: -100%; } } @media (max-aspect-ratio: 1/1) { #awc-vignette { width: 300%; left: -100%; } } @supports (object-fit: cover) { #awc-vignette { top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; } } @-webkit-keyframes awc-vignette-anim { from {opacity: 0;} to {opacity: 1;} } @keyframes awc-vignette-anim { from {opacity: 0;} to {opacity: 1;} } #awc-tree { display: block; position: absolute; width:33%; height:auto; right: 0px; bottom: 0px; pointer-events: none; } #awc-shnow { z-index: 2; position: fixed; top: 0px; bottom: 0px; right: 0px; background-image: url(\'http://www.allwebcafe.com/public/images/christmasfy-bookmarklet/shnow.png\'); background-size: contain; background-position: right bottom; background-repeat: no-repeat; width: 100%; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; animation: awc-shnow-anim 1s; -webkit-animation: awc-shnow-anim 1s; } @-webkit-keyframes awc-shnow-anim { from {bottom: -50%;} to {opacity: 0%;} } @keyframes awc-shnow-anim { from {bottom: -50%;} to {opacity: 0%;} } </style><img id=\'awc-vignette\' src=\'http://www.allwebcafe.com/public/images/christmasfy-bookmarklet/vignette.png\'></canvas> <div id=\'awc-shnow\'> <canvas id=\'awc-clack\' width=\'360\' height=\'300\' style=\'top:0px;\'></canvas> <canvas id=\'awc-tree\' width=\'839\' height=\'1400\'></canvas> </div>');
+$('body').prepend('<style> body { margin: 0; background-color: #aaa; } #awc-clack { display: block; position: absolute; top: 0; left: 0; width: 30%; pointer-events: none; animation: clackers 1s; -webkit-animation: clackers 1s; } @-webkit-keyframes clackers { from {top: -300px;} to {top: 0px;} } @keyframes clackers { from {top: -300px;} to {top: 0px;} } #awc-vignette { z-index: 1; transform: translateZ(0); opacity: 1; top: 0; left: 0; position: fixed; pointer-events: none; animation: awc-vignette-anim 1s; -webkit-animation: awc-vignette-anim 1s; } @media (min-aspect-ratio: 1/1) { #awc-vignette { height: 300%; top: -100%; } } @media (max-aspect-ratio: 1/1) { #awc-vignette { width: 300%; left: -100%; } } @supports (object-fit: cover) { #awc-vignette { top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; } } @-webkit-keyframes awc-vignette-anim { from {opacity: 0;} to {opacity: 1;} } @keyframes awc-vignette-anim { from {opacity: 0;} to {opacity: 1;} } #awc-tree { display: block; position: absolute; width:33%; height:auto; right: 0px; bottom: 0px; pointer-events: none; } #awc-shnow { z-index: 2; position: fixed; top: 0px; bottom: 0px; right: 0px; background-image: url(\'http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/sshnow.png\'); background-size: contain; background-position: right bottom; background-repeat: no-repeat; width: 100%; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; animation: awc-shnow-anim 1s; -webkit-animation: awc-shnow-anim 1s; } @-webkit-keyframes awc-shnow-anim { from {bottom: -50%;} to {opacity: 0%;} } @keyframes awc-shnow-anim { from {bottom: -50%;} to {opacity: 0%;} } </style><img id=\'awc-vignette\' src=\'http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/vignette.png\'></canvas> <div id=\'awc-shnow\'> <canvas id=\'awc-clack\' width=\'360\' height=\'300\' style=\'top:0px;\'></canvas> <canvas id=\'awc-tree\' width=\'839\' height=\'1400\'></canvas> </div>');
 
 window.requestAnimFrame = (function()
 {
@@ -163,15 +164,15 @@ var canvas = document.getElementById('awc-clack');
 var ctx	= canvas.getContext('2d');
 
 var images = [new Image(), new Image(), new Image(), new Image(), new Image()];
-images[0].src = 'http://www.allwebcafe.com/public/images/christmasfy-bookmarklet/orn1.png';
+images[0].src = 'http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/tree-placeholder.png';/*orn1.png';*/
 imagesToLoad++;
-images[1].src = 'http://www.allwebcafe.com/public/images/christmasfy-bookmarklet/orn2.png';
+images[1].src = 'http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/tree-placeholder.png';/*orn2.png';*/
 imagesToLoad++;
-images[2].src = 'http://www.allwebcafe.com/public/images/christmasfy-bookmarklet/orn3.png';
+images[2].src = 'http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/tree-placeholder.png';/*orn3.png';*/
 imagesToLoad++;
-images[3].src = 'http://www.allwebcafe.com/public/images/christmasfy-bookmarklet/orn4.png';
+images[3].src = 'http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/tree-placeholder.png';/*orn4.png';*/
 imagesToLoad++;
-images[4].src = 'http://www.allwebcafe.com/public/images/christmasfy-bookmarklet/orn5.png';
+images[4].src = 'http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/tree-placeholder.png';/*orn5.png';*/
 imagesToLoad++;
 
 /*****************************************************************/
@@ -179,22 +180,26 @@ var awctreecanvas = document.getElementById('awc-tree');
 var awctreectx	= awctreecanvas.getContext('2d');
 
 var treeImage = new Image();
-treeImage.src = 'http://www.allwebcafe.com/public/images/christmasfy-bookmarklet/tree.png';
+treeImage.src = 'http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/tree-placeholder.png';/*tree.png';*/
 imagesToLoad++;
 
 var treePuff = new Image();
-treePuff.src = 'http://www.allwebcafe.com/public/images/christmasfy-bookmarklet/puff.png';
+treePuff.src = 'http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/puff.png';
 imagesToLoad++;
 
 var treeLightsOff = new Image();
-treeLightsOff.src = 'http://www.allwebcafe.com/public/images/christmasfy-bookmarklet/tree-lights.png';
+treeLightsOff.src = 'http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/tree-placeholder.png';/*tree-lights.png';*/
 imagesToLoad++;
 var treeLights = [new Image(), new Image(), new Image()];
-treeLights[0].src = 'http://www.allwebcafe.com/public/images/christmasfy-bookmarklet/tree-lights0.png';
+treeLights[0].src = 'http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/tree-placeholder.png';/*tree-lights0.png';*/
 imagesToLoad++;
-treeLights[1].src = 'http://www.allwebcafe.com/public/images/christmasfy-bookmarklet/tree-lights1.png';
+treeLights[1].src = 'http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/tree-placeholder.png';/*tree-lights1.png';*/
 imagesToLoad++;
-treeLights[2].src = 'http://www.allwebcafe.com/public/images/christmasfy-bookmarklet/tree-lights2.png';
+treeLights[2].src = 'http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/tree-placeholder.png';/*tree-lights2.png';*/
+imagesToLoad++;
+
+var box1 = new Image();
+box1.src = 'http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/boxtest.png';
 imagesToLoad++;
 
 
@@ -209,11 +214,15 @@ treeLightsOff.onload = function(){ imageLoaded(); };
 treeLights[0].onload = function(){ imageLoaded(); };
 treeLights[1].onload = function(){ imageLoaded(); };
 treeLights[2].onload = function(){ imageLoaded(); };
+box1.onload = function(){ imageLoaded(); };
 
 var tree = new xmasTree(treeImage, 0.35);
 
 var treedelay = parseInt(60 * 1);
 var treeticker = 0;
+
+var xmasbox = new box();
+
 
 /* OUR CLACKER OBJECT */
 function circle(x, y, pointx, pointy, radius, image)
@@ -426,6 +435,21 @@ function xmasTree(image, growthtime)
 	}
 }
 
+function box()
+{
+	this.draw = draw;
+	function draw()
+	{
+		awctreectx.drawImage(box1, 0, awctreecanvas.height-200, 100, 100);
+	}
+
+	this.process = process;
+	function process()
+	{
+		
+	}
+}
+
 /* OUR HIT DETECTION */
 function circleHitDetection(x1, y1, radius1, x2, y2, radius2)
 {
@@ -495,6 +519,7 @@ function draw()
 		clackers[i].draw();
 	}
 	tree.draw();
+	xmasbox.draw();
 
 }
 
@@ -513,10 +538,12 @@ function process()
 	{
 		treeticker++;
 	}
+	xmasbox.process();
 }
 
 
-    });">Christmasfy Your Website</a>
+    });/*">Christmasfy Your Website</a>*/
+</script>
 
 </body>
 <script>
