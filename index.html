@@ -27,7 +27,6 @@ var snowflakeImg = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAiCAYAAA
 $(document).snowfall({image :snowflakeImg, minSize: 5, maxSize:12, flakeCount: 50});
 
 
-
 if ( document.location.hostname == 'allwebcafe.com' || document.location.hostname == 'www.allwebcafe.com' ) {
 	/* Replace the Hero image with the Christmas-y fireplace and stockings image */
 	$('html, body').animate({ scrollTop: 0 }, 'slow');
@@ -53,6 +52,81 @@ if ( document.location.hostname == 'allwebcafe.com' || document.location.hostnam
 } else {
 	$('body').wrapInner('<div></div>');
 }
+
+$('img:visible').not('.snowfall-flakes').each(function(i,img) {
+	var origimg = $(this);
+
+	margin = $(this).css('margin');
+	padding = $(this).css('padding');
+
+	var imgWid = $(this).width();
+	var imgHgt = $(this).height();
+
+	var divCanvas = $('<canvas>').attr({'width':imgWid,'height':imgHgt}).appendTo('body');
+
+	var canvas = divCanvas[0],
+		ctx = canvas.getContext('2d'),
+		img = new Image;
+
+	img.src = $(this).attr('src');
+	img.setAttribute('crossOrigin','anonymous');
+
+	img.onload = function() {
+		var startPt = 0;
+
+		/* console.log(origimg.attr('src') + ' ' + origimg.width() + ' ' + origimg.height() + ' ' + origimg.css('padding-top')); */
+		ctx.beginPath();
+		ctx.moveTo(0, 0);
+		ctx.lineTo(0, 20);
+
+		if (imgHgt < 200) {
+			var maxLen = imgHgt;
+			var nextStartLong = 4;
+			var nextStartShort = 3;
+		} else {
+			var maxLen = 200;
+			var nextStartLong = 8;
+			var nextStartShort = 6;
+		}
+
+		/* imgLoop = imgWid + ((imgWid/imgHgt*1.8)*100); */
+		while (startPt < imgWid) {
+
+
+			randLong = Math.floor((Math.random() * 20));
+
+			if (randLong < 3) {
+				length = Math.floor((Math.random() * maxLen) + 1);
+				endPt = Math.floor((Math.random() * 10) + 1);
+				nextStart = nextStartLong;
+			}
+			else {
+				length = Math.floor((Math.random() * 7) + 1);
+				endPt = Math.floor((Math.random() * 4) + 1);
+				nextStart = nextStartShort;
+			}
+
+			ctx.quadraticCurveTo(startPt+4, length+20, startPt+nextStart, endPt);
+			startPt += nextStart;
+		}
+
+		ctx.lineTo(imgWid,0);
+		ctx.closePath();
+		ctx.lineWidth = 1;
+		ctx.fillStyle = 'rgba(220,220,250,0.7)';
+		ctx.fill();
+		ctx.strokeStyle = 'rgba(120,120,250,0.8)';
+		ctx.stroke();
+
+		dataInfo = canvas.toDataURL();
+
+		origimg.css({'background-image':'url('+origimg.attr('src')+')', 'background-clip':'content-box', 'background-size':imgWid+'px '+imgHgt+'px', 'background-position':origimg.css('padding-left')+' '+origimg.css('padding-top')});
+		origimg.attr({'src':dataInfo,'height':imgHgt,'width':imgWid});
+
+		divCanvas.remove();
+	}
+
+});
 
 /* THIS IS THE HTML BEING PREPENDED TO THE BODY */
 /*
