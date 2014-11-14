@@ -1,21 +1,61 @@
-<!doctype html>
-
-<html lang="en">
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-
-  <title>Christmasfy Your Website by allwebcafe</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width" />
   <meta name="description" content="The Christmasfy Your Website Bookmarklet by allwebcafe.">
   <meta name="author" content="allwebcafe">
-
-
-<script>
-
-</script>
-
+  
+  <title>Christmasfy Your Website by allwebcafe</title>
+  
+  <link rel="stylesheet" href="/christmasfy-bookmarklet/public/css/normalize.min.css" />
+	<link rel="stylesheet" href="/christmasfy-bookmarklet/public/css/foundation.min.css" />
+	<!--[if IE 8]><link rel="stylesheet" href="/christmasfy-bookmarklet/public/css/ie8-grid-foundation-4.css" /><![endif]-->
+	<link rel="stylesheet" href="/christmasfy-bookmarklet/public/css/custom.css" />
+	<!--[if IE 8]><link rel="stylesheet" href="/christmasfy-bookmarklet/public/css/ie8.css" /><![endif]-->
+	<!--[if gte IE 9]><style type="text/css"> .gradient {filter: none;}</style><![endif]-->
+	<script src="/christmasfy-bookmarklet/public/js/vendor/custom.modernizr.js"></script>
+  
 </head>
-<body>
-   	<a href="javascript:(function(e,a,g,h,f,c,b,d){if(!(f=e.jQuery)||g>f.fn.jquery||h(f)){c=a.createElement('script');c.type='text/javascript';c.src='http://ajax.googleapis.com/ajax/libs/jquery/'+g+'/jquery.min.js';c.onload=c.onreadystatechange=function(){if(!b&&(!(d=this.readyState)||d=='loaded'||d=='complete')){h((f=e.jQuery).noConflict(1),b=1);f(c).remove()}};a.body.appendChild(c)}})(window,document,'1.8',function($,L){  
+
+	<body>
+		<!--[if lt IE 7]>
+		    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+		<![endif]-->
+		<div id="pinetree-top" class="awc-wrapper"></div>
+		<header class="row">
+			<div class="large-12 columns">
+				<p class="text-center">Christmasfy<br />Your Website</p>
+			</div>
+		</header>
+		<div id="horizontal-rule" class="awc-wrapper">
+			<div class="row">
+				<div class="large-12 columns text-center">
+					<img src="/christmasfy-bookmarklet/public/img/layout/social-icon-placeholder.png" />
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-12 columns text-center intro-content">
+				<h1>~ Join the allwebcafe spirit ~</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<a class="awc-button-large awc-red-gradient">Christmasfy Me!</a>
+			</div>
+		</div>
+		<div class="awc-wrapper awc-grey-background">
+			<div class="row">
+				<div class="large-6 columns"></div>
+				<div class="large-6 columns how-to">
+					<h2>How to bookmark it</h2>
+					<p>It's easy! Drag the button above to your bookmarks bar at the top of your browser window.</p>
+				</div>
+			</div>
+		</div>
+
+
+   	<a href="javascript:(function(e,a,g,h,f,c,b,d){if(!(f=e.jQuery)||g>f.fn.jquery||h(f)){c=a.createElement('script');c.type='text/javascript';c.src='//ajax.googleapis.com/ajax/libs/jquery/'+g+'/jquery.min.js';c.onload=c.onreadystatechange=function(){if(!b&&(!(d=this.readyState)||d=='loaded'||d=='complete')){h((f=e.jQuery).noConflict(1),b=1);f(c).remove()}};a.body.appendChild(c)}})(window,document,'1.8',function($,L){  
 
 
 if ( document.location.hostname == 'allwebcafe.com' || document.location.hostname == 'www.allwebcafe.com' ) {
@@ -569,10 +609,24 @@ function process()
 
     });">Christmasfy Your Website</a>
 
-</body>
-<script>
 
 
 
-</script>
+
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	  <script>window.jQuery || document.write('<script src="/christmasfy-bookmarklet/public/js/vendor/jquery.min.js"><\/script>')</script>
+	  <script src="/christmasfy-bookmarklet/public/js/foundation.min.js"></script>
+		<script src="/christmasfy-bookmarklet/public/js/plugins.min.js"></script>
+<!--
+	  <?php if (ENVIRONMENT == "production") : 
+	    #Production will use the most compressed versions, combined with codekit this will be easy to maintain and debug on other enviroments. ?>
+			<script src="/christmasfy-bookmarklet/public/js/ready.min.js"></script>
+		<?php else : ?>
+-->
+			<script> $(document).foundation(function(response){console.log(response.errors);}); </script>
+			<script src="/christmasfy-bookmarklet/public/js/ready.js"></script>
+<!-- 		<?php endif; ?> -->
+
+	</body>
 </html>

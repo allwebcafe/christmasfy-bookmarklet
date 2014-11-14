@@ -1,0 +1,17 @@
+$small-screen: 768px;
+$medium-screen: 1280px;
+$large-screen: 1440px;
+
+$screen: "only screen";
+$small: "only screen and (min-width:"#{$small-screen}")";
+$medium: "only screen and (min-width:"#{$medium-screen}")";
+$large: "only screen and (min-width:"#{$large-screen}")";
+$landscape: "only screen and (orientation: landscape)";
+$portrait: "only screen and (orientation: portrait)";
+
+/* === Custom SASS Variables === */
+$path-img: '/christmasfy-bookmarklet/public/img/';
+$awc-grey: #efefef;
+$awc-green: #83a14d;
+
+/* === Custom SASS Functions or Includes === */
