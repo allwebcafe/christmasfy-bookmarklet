@@ -10,8 +10,21 @@ $landscape: "only screen and (orientation: landscape)";
 $portrait: "only screen and (orientation: portrait)";
 
 /* === Custom SASS Variables === */
-$path-img: '/christmasfy-bookmarklet/public/img/';
+
+/* Paths */
+$path-img: "/christmasfy-bookmarklet/public/img/";
+$path-font: "/christmasfy-bookmarklet/public/fonts/";
+
+/* Colors */
 $awc-grey: #efefef;
+$awc-copy-grey: #333333;
 $awc-green: #83a14d;
 
+/* Fonts */
+$nexa: "nexa_lightregular";
+$nexabold: "nexa_boldregular";
+$nexaslab: "nexa_slab_regularregular";
+$nexaslabbook: "nexa_slab_bookregular";
+$nexaslabheavy: "nexa_slab_heavyregular";
+$opensans: "Open Sans";
 /* === Custom SASS Functions or Includes === */

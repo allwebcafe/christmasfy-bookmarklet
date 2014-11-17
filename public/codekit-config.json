@@ -97,15 +97,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/js\/plugins\/validate.min.js" : {
+    "\/js\/ready.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins\/validate.min.js",
+      "inputAbbreviatedPath" : "\/js\/ready.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/validate.min.min.js",
+      "outputAbbreviatedPath" : "\/js\/ready.min.js",
       "fileType" : 64
     },
     "\/js\/foundation\/foundation.dropdown.js" : {
@@ -130,15 +130,15 @@
       "initialSize" : 997,
       "fileType" : 8192
     },
-    "\/js\/ready.js" : {
+    "\/js\/plugins\/validate.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/ready.js",
+      "inputAbbreviatedPath" : "\/js\/plugins\/validate.min.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/ready.min.js",
+      "outputAbbreviatedPath" : "\/js\/validate.min.min.js",
       "fileType" : 64
     },
     "\/js\/vendor\/custom.modernizr.js" : {
@@ -280,6 +280,17 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/js\/jquery.color.min.min.js",
       "fileType" : 64
+    },
+    "\/img\/layout\/christmasfy-your-website-logo.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/layout\/christmasfy-your-website-logo.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/layout\/christmasfy-your-website-logo.png",
+      "initialSize" : 38933,
+      "fileType" : 8192
     },
     "\/css\/sass\/custom.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -455,17 +466,6 @@
       "fileType" : 4,
       "debugStyle" : 1
     },
-    "\/js\/foundation\/foundation.placeholder.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.placeholder.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/foundation.placeholder.min.js",
-      "fileType" : 64
-    },
     "\/js\/foundation\/foundation.orbit.js" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
@@ -475,6 +475,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/js\/foundation.orbit.min.js",
+      "fileType" : 64
+    },
+    "\/js\/foundation\/foundation.placeholder.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.placeholder.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/foundation.placeholder.min.js",
       "fileType" : 64
     },
     "\/js\/foundation\/foundation.alerts.js" : {
@@ -488,6 +499,15 @@
       "outputAbbreviatedPath" : "\/js\/foundation.alerts.min.js",
       "fileType" : 64
     },
+    "\/css\/ie8.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/ie8.css",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 16
+    },
     "\/js\/vendor\/jquery.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -498,15 +518,6 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/js\/jquery.min.min.js",
       "fileType" : 64
-    },
-    "\/css\/ie8.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/ie8.css",
-      "outputAbbreviatedPath" : "\/No Output Path",
-      "fileType" : 16
     },
     "\/js\/foundation\/foundation.clearing.js" : {
       "ignoreWasSetByUser" : 1,
@@ -539,6 +550,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
+    "\/css\/vendor\/fancybox\/helpers\/jquery.fancybox-buttons.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/vendor\/fancybox\/helpers\/jquery.fancybox-buttons.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/js\/foundation\/foundation.section.js" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
@@ -549,15 +569,6 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/js\/foundation.section.min.js",
       "fileType" : 64
-    },
-    "\/css\/vendor\/fancybox\/helpers\/jquery.fancybox-buttons.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/vendor\/fancybox\/helpers\/jquery.fancybox-buttons.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/js\/jquery.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -592,17 +603,6 @@
       "outputAbbreviatedPath" : "\/js\/awcinfinitescroll.jquery.min.js",
       "fileType" : 64
     },
-    "\/js\/foundation\/foundation.reveal.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.reveal.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/foundation.reveal.min.js",
-      "fileType" : 64
-    },
     "\/img\/layout\/awc-red-gradient.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -613,6 +613,17 @@
       "outputAbbreviatedPath" : "\/img\/layout\/awc-red-gradient.png",
       "initialSize" : 991,
       "fileType" : 8192
+    },
+    "\/js\/foundation\/foundation.reveal.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.reveal.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/foundation.reveal.min.js",
+      "fileType" : 64
     },
     "\/js\/plugins\/jquery.easing.1.3.js" : {
       "ignoreWasSetByUser" : 0,
