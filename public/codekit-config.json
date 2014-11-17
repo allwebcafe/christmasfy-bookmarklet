@@ -97,15 +97,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/js\/plugins\/validate.min.js" : {
+    "\/js\/ready.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins\/validate.min.js",
+      "inputAbbreviatedPath" : "\/js\/ready.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/validate.min.min.js",
+      "outputAbbreviatedPath" : "\/js\/ready.min.js",
       "fileType" : 64
     },
     "\/js\/foundation\/foundation.dropdown.js" : {
@@ -119,17 +119,6 @@
       "outputAbbreviatedPath" : "\/js\/foundation.dropdown.min.js",
       "fileType" : 64
     },
-    "\/js\/ready.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/ready.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/ready.min.js",
-      "fileType" : 64
-    },
     "\/img\/fancybox\/fancybox_overlay.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -140,6 +129,17 @@
       "outputAbbreviatedPath" : "\/img\/fancybox\/fancybox_overlay.png",
       "initialSize" : 997,
       "fileType" : 8192
+    },
+    "\/js\/plugins\/validate.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/plugins\/validate.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/validate.min.min.js",
+      "fileType" : 64
     },
     "\/js\/vendor\/custom.modernizr.js" : {
       "ignoreWasSetByUser" : 0,
@@ -421,16 +421,17 @@
       "outputAbbreviatedPath" : "\/js\/plugins.min.min.js",
       "fileType" : 64
     },
-    "\/js\/foundation\/foundation.placeholder.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
+    "\/css\/sass\/ie8.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.placeholder.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/foundation.placeholder.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/css\/sass\/ie8.scss",
+      "outputStyle" : 2,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/ie8.css",
+      "fileType" : 4,
+      "debugStyle" : 1
     },
     "\/js\/foundation\/foundation.orbit.js" : {
       "ignoreWasSetByUser" : 1,
@@ -443,17 +444,16 @@
       "outputAbbreviatedPath" : "\/js\/foundation.orbit.min.js",
       "fileType" : 64
     },
-    "\/css\/sass\/ie8.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+    "\/js\/foundation\/foundation.placeholder.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/sass\/ie8.scss",
-      "outputStyle" : 2,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/ie8.css",
-      "fileType" : 4,
-      "debugStyle" : 1
+      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.placeholder.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/foundation.placeholder.min.js",
+      "fileType" : 64
     },
     "\/js\/foundation\/foundation.alerts.js" : {
       "ignoreWasSetByUser" : 1,
