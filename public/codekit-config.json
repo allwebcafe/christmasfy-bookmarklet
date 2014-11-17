@@ -108,6 +108,17 @@
       "outputAbbreviatedPath" : "\/js\/ready.min.js",
       "fileType" : 64
     },
+    "\/js\/christmasfy-bookmarketlet.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/js\/christmasfy-bookmarketlet.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/christmasfy-bookmarketlet.min.js",
+      "fileType" : 64
+    },
     "\/js\/foundation\/foundation.dropdown.js" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
@@ -410,17 +421,6 @@
       "initialSize" : 6553,
       "fileType" : 8192
     },
-    "\/js\/plugins.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/plugins.min.min.js",
-      "fileType" : 64
-    },
     "\/css\/sass\/ie8.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -433,6 +433,17 @@
       "fileType" : 4,
       "debugStyle" : 1
     },
+    "\/js\/foundation\/foundation.placeholder.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.placeholder.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/foundation.placeholder.min.js",
+      "fileType" : 64
+    },
     "\/js\/foundation\/foundation.orbit.js" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
@@ -444,15 +455,15 @@
       "outputAbbreviatedPath" : "\/js\/foundation.orbit.min.js",
       "fileType" : 64
     },
-    "\/js\/foundation\/foundation.placeholder.js" : {
-      "ignoreWasSetByUser" : 1,
+    "\/js\/plugins.min.js" : {
+      "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.placeholder.js",
+      "inputAbbreviatedPath" : "\/js\/plugins.min.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/foundation.placeholder.min.js",
+      "outputAbbreviatedPath" : "\/js\/plugins.min.min.js",
       "fileType" : 64
     },
     "\/js\/foundation\/foundation.alerts.js" : {
@@ -466,15 +477,6 @@
       "outputAbbreviatedPath" : "\/js\/foundation.alerts.min.js",
       "fileType" : 64
     },
-    "\/css\/ie8.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/ie8.css",
-      "outputAbbreviatedPath" : "\/No Output Path",
-      "fileType" : 16
-    },
     "\/js\/vendor\/jquery.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -486,15 +488,24 @@
       "outputAbbreviatedPath" : "\/js\/jquery.min.min.js",
       "fileType" : 64
     },
-    "\/js\/foundation\/foundation.clearing.js" : {
-      "ignoreWasSetByUser" : 1,
+    "\/css\/ie8.css" : {
+      "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.clearing.js",
+      "inputAbbreviatedPath" : "\/css\/ie8.css",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 16
+    },
+    "\/js\/christmasfy-bookmarketlet.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/christmasfy-bookmarketlet.min.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/foundation.clearing.min.js",
+      "outputAbbreviatedPath" : "\/js\/christmasfy-bookmarketlet.min.min.js",
       "fileType" : 64
     },
     "\/js\/foundation\/foundation.js" : {
@@ -506,6 +517,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/js\/foundation.min.js",
+      "fileType" : 64
+    },
+    "\/js\/foundation\/foundation.clearing.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.clearing.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/foundation.clearing.min.js",
       "fileType" : 64
     },
     "\/css\/foundation.min.css" : {
