@@ -97,26 +97,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/js\/plugins\/validate.min.js" : {
+    "\/js\/ready.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins\/validate.min.js",
+      "inputAbbreviatedPath" : "\/js\/ready.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/validate.min.min.js",
-      "fileType" : 64
-    },
-    "\/js\/christmasfy-bookmarketlet.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/js\/christmasfy-bookmarketlet.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/christmasfy-bookmarketlet.min.js",
+      "outputAbbreviatedPath" : "\/js\/ready.min.js",
       "fileType" : 64
     },
     "\/js\/foundation\/foundation.dropdown.js" : {
@@ -141,15 +130,15 @@
       "initialSize" : 997,
       "fileType" : 8192
     },
-    "\/js\/ready.js" : {
+    "\/js\/plugins\/validate.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/ready.js",
+      "inputAbbreviatedPath" : "\/js\/plugins\/validate.min.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/ready.min.js",
+      "outputAbbreviatedPath" : "\/js\/validate.min.min.js",
       "fileType" : 64
     },
     "\/js\/vendor\/custom.modernizr.js" : {
@@ -161,6 +150,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/js\/custom.modernizr.min.js",
+      "fileType" : 64
+    },
+    "\/js\/christmasfy-bookmarklet.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/christmasfy-bookmarklet.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/christmasfy-bookmarklet.min.min.js",
       "fileType" : 64
     },
     "\/js\/plugins\/jquery.cycle2.min.js" : {
@@ -216,6 +216,17 @@
       "outputAbbreviatedPath" : "\/js\/jquery.transit.min.min.js",
       "fileType" : 64
     },
+    "\/js\/christmasfy-bookmarklet.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/christmasfy-bookmarklet.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/christmasfy-bookmarklet.min.js",
+      "fileType" : 64
+    },
     "\/img\/layout\/social-icon-placeholder.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -269,6 +280,17 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/js\/jquery.color.min.min.js",
       "fileType" : 64
+    },
+    "\/img\/layout\/christmasfy-your-website-logo.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/layout\/christmasfy-your-website-logo.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/layout\/christmasfy-your-website-logo.png",
+      "initialSize" : 38933,
+      "fileType" : 8192
     },
     "\/css\/sass\/custom.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -497,15 +519,15 @@
       "outputAbbreviatedPath" : "\/js\/jquery.min.min.js",
       "fileType" : 64
     },
-    "\/js\/christmasfy-bookmarketlet.min.js" : {
-      "ignoreWasSetByUser" : 0,
+    "\/js\/foundation\/foundation.clearing.js" : {
+      "ignoreWasSetByUser" : 1,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/christmasfy-bookmarketlet.min.js",
+      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.clearing.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/christmasfy-bookmarketlet.min.min.js",
+      "outputAbbreviatedPath" : "\/js\/foundation.clearing.min.js",
       "fileType" : 64
     },
     "\/js\/foundation\/foundation.js" : {
@@ -517,17 +539,6 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/js\/foundation.min.js",
-      "fileType" : 64
-    },
-    "\/js\/foundation\/foundation.clearing.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.clearing.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/foundation.clearing.min.js",
       "fileType" : 64
     },
     "\/css\/foundation.min.css" : {
