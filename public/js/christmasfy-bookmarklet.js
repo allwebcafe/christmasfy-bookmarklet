@@ -3,13 +3,62 @@ javascript:(function(e,a,g,h,f,c,b,d){if(!(f=e.jQuery)||g>f.fn.jquery||h(f)){c=a
 
 
 /* LET IT SNOW */
-$.snowfall = function(t,e){function i(i,s,a,n,o){this.id=o,this.x=i,this.y=s,this.size=a,this.speed=n,this.step=0,this.stepSize=h(1,10)/100,e.collection&&(this.target=g[h(0,g.length-1)]);var l=null;e.image?(l=$(document.createElement('img')),l[0].src=e.image):(l=$(document.createElement('div')),l.css({background:e.flakeColor})),l.attr({'class':'snowfall-flakes',id:'flake-'+this.id}).css({width:this.size,height:this.size,position:e.flakePosition,top:this.y,left:this.x,fontSize:0,zIndex:e.flakeIndex}),$(t).get(0).tagName===$(document).get(0).tagName?($('body').append(l),t=$('body')):$(t).append(l),this.element=document.getElementById('flake-'+this.id),this.update=function(){if(this.y+=this.speed,this.y>r-(this.size+6)&&this.reset(),this.element.style.top=this.y+'px',this.element.style.left=this.x+'px',this.step+=this.stepSize,this.x+=y===!1?Math.cos(this.step):y+Math.cos(this.step),e.collection&&this.x>this.target.x&&this.x<this.target.width+this.target.x&&this.y>this.target.y&&this.y<this.target.height+this.target.y){var t=this.target.element.getContext('2d'),i=this.x-this.target.x,s=this.y-this.target.y,a=this.target.colData;if(void 0!==a[parseInt(i)][parseInt(s+this.speed+this.size)]||s+this.speed+this.size>this.target.height)if(s+this.speed+this.size>this.target.height){for(;s+this.speed+this.size>this.target.height&&this.speed>0;)this.speed*=.5;t.fillStyle='#fff',void 0==a[parseInt(i)][parseInt(s+this.speed+this.size)]?(a[parseInt(i)][parseInt(s+this.speed+this.size)]=1,t.fillRect(i,s+this.speed+this.size,this.size,this.size)):(a[parseInt(i)][parseInt(s+this.speed)]=1,t.fillRect(i,s+this.speed,this.size,this.size)),this.reset()}else this.speed=1,this.stepSize=0,parseInt(i)+1<this.target.width&&void 0==a[parseInt(i)+1][parseInt(s)+1]?this.x++:parseInt(i)-1>0&&void 0==a[parseInt(i)-1][parseInt(s)+1]?this.x--:(t.fillStyle='#fff',t.fillRect(i,s,this.size,this.size),a[parseInt(i)][parseInt(s)]=1,this.reset())}(this.x>d-p||this.x<p)&&this.reset()},this.reset=function(){this.y=0,this.x=h(p,d-p),this.stepSize=h(1,10)/100,this.size=h(100*e.minSize,100*e.maxSize)/100,this.speed=h(e.minSpeed,e.maxSpeed)}}function s(){for(l=0;l<n.length;l+=1)n[l].update();f=requestAnimationFrame(function(){s()})}var a={flakeCount:35,flakeColor:'#ffffff',flakePosition:'absolute',flakeIndex:999999,minSize:1,maxSize:2,minSpeed:1,maxSpeed:5,round:!1,shadow:!1,collection:!1,collectionHeight:40,deviceorientation:!1},e=$.extend(a,e),h=function(t,e){return Math.round(t+Math.random()*(e-t))};$(t).data('snowfall',this);var n=[],o=0,l=0,r=$(t).height(),d=$(t).width(),p=0,f=0;if(e.collection!==!1){var c=document.createElement('canvas');if(c.getContext&&c.getContext('2d'))for(var g=[],m=$(e.collection),x=e.collectionHeight,l=0;l<m.length;l++){var u=m[l].getBoundingClientRect(),z=$('<canvas/>',{'class':'snowfall-canvas'}),w=[];if(u.top-x>0){$('body').append(z),z.css({position:e.flakePosition,left:u.left+'px',top:u.top-x+'px'}).prop({width:u.width,height:x});for(var v=0;v<u.width;v++)w[v]=[];g.push({element:z.get(0),x:u.left,y:u.top-x,width:u.width,height:x,colData:w})}}else e.collection=!1}for($(t).get(0).tagName===$(document).get(0).tagName&&(p=25),$(window).bind('resize',function(){r=$(t)[0].clientHeight,d=$(t)[0].offsetWidth}),l=0;l<e.flakeCount;l+=1)o=n.length,n.push(new i(h(p,d-p),h(0,r),h(100*e.minSize,100*e.maxSize)/100,h(e.minSpeed,e.maxSpeed),o));e.round&&$('.snowfall-flakes').css({'-moz-border-radius':e.maxSize,'-webkit-border-radius':e.maxSize,'border-radius':e.maxSize}),e.shadow&&$('.snowfall-flakes').css({'-moz-box-shadow':'1px 1px 1px #555','-webkit-box-shadow':'1px 1px 1px #555','box-shadow':'1px 1px 1px #555'});var y=!1;e.deviceorientation&&$(window).bind('deviceorientation',function(t){y=.1*t.originalEvent.gamma}),s(),this.clear=function(){$(t).children('.snowfall-flakes').remove(),$('.snowfall-canvas').remove(),n=[],cancelAnimationFrame(f)}},
-$.fn.snowfall=function(t){return'object'==typeof t||void 0==t?this.each(function(){new $.snowfall(this,t)}):'string'==typeof t?this.each(function(){var t=$(this).data('snowfall');t&&t.clear()}):void 0};
-
+flakeCount = 30;
 var snowflakeImg = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAiCAYAAABIiGl0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0RjlFQjg3RDY0MkYxMUU0OUYxQTk4MEJDNDI3MUVEMyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0RjlFQjg3RTY0MkYxMUU0OUYxQTk4MEJDNDI3MUVEMyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjRGOUVCODdCNjQyRjExRTQ5RjFBOTgwQkM0MjcxRUQzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjRGOUVCODdDNjQyRjExRTQ5RjFBOTgwQkM0MjcxRUQzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+frm4bAAAA65JREFUeNrM13toTnEcx/HdXDLD1oQxlzINzTW3P1xym3vKZC6lxB9za63EH4uaS25/uZS7XLdFIhTSWCyXmIRhbGxhRMPcGY/3V58npxN5ztO2nHr1nPOc3+93zu/+PaE+ny8kyOOEfscFkzkiiDyz0Axx+I4FaIoVnkqxGns0Bt9Q7ft9TPFaTpjH2o5ED0ThDkrRAq11L+Aj1GMfd0EhrqMRfuAdBiERxYEW5KXG4eiDfrinmvdCBbpjjPq6xmrcXrWxhKfQFUW4Yfn1ArF4iVRU4S4eBzq4lmMP4jAVUeiEZLxECS460l9HoeM6B5WowgjljVJZcSp7pT+9TafdaKD+s7eOx0K8wBn1aaxMRwzeolJ9bEdLbMYUXdvU6q0Bt1CD0KZfTw3MGOvjAjWl9dN73fiAa5iEg9iAj+rDVA2ieF3nYw7qK42lzVHeayorSl2QhAnIs2rH46DmozXfC1cTmjAswReUotwxh5/iHl5h7R/mbKHKPI+3OItWdiMNV9ED6Y4CLUESQpW5RP+XIVz/3dC5/16xzu1FW+CMo7zVaK3KbfLXpjmOoAIZGIwiZZiH2ziGxfovRIPlsM6/Y5kG6BOV4VN5wzBXrWIVbItof3NEYxdSXM00AZ9UyA79l62XOK7znWodu7deaT9imqusIdiOmF9T2HVzr6OQCPWr9Wm+3j5fL/NQtXyiKTRV+V4rzQNkIVJlFSDP+Sz3gxPwWU1m1xf0YP/9dbipvvQf1iK3sN+R7pH62s7nK13i3zYJm8spmr+ZOKTVx1auK9iKam2lCY58DbX0lmGL0rbDJeRiI55jop7hea2u2cPV1B3woS6a2v3gk7hSl4MrWkN9Yl1OJ1tAYlVYuZrG6wLyA0uRqSU0oAUkTc1rS+aqIJfM+7pXpQeEB7JktleT2Vtf/scm8VV9XuraJO6or7f/YZOwBz13bxIR2ocTFU1UaA4v06AfqFDHtsDZGKu0a3Afb/AFZ7W9HsEnlOMyLmqrnIwMNEFHjLYHz1TEaKFNYwVvNtH74zRuK9YKUQCQKwcUCCQrEEjQ/mxx9lVkYYiCwi76tbLOYag1RRM1SZYj9EnV6OuKkY7QpyDA0Ge48jbFDA2wXRpDv9L/F8Hev9hInYlu2OYYXNka/emqYUDleQ3oOyuOeqYWqNT304DaDOjtaIOV6IuviMQwLFKX1OpH2ygto9+0XlcH89EWzGeqTbPlGI962Ofan2vlo83fPTZ/jyooCOrD/KcAAwCotU9/uXNufgAAAABJRU5ErkJggg==';
 
-$(document).snowfall({image :snowflakeImg, minSize: 5, maxSize:12, flakeCount: 50});
+function Flake() {
+	this.x = Math.floor((Math.random() * $(window).width()) + 10);
+	this.y = Math.floor(Math.random()*$(window).height()+1);
+	this.size = Math.floor((Math.random() * 10) + 8);
+	this.speed = Math.floor((Math.random() * 10) + 1);
+    this.step = 0;
+    this.stepSize = (Math.floor((Math.random() * 10)))/100;
 
+	this.element = $('<img>').addClass('awc-snow-flake').attr({'src':snowflakeImg}).css({'pointer-events':'none','width':this.size,'height':this.size,'position':'absolute','top':this.y,'left':this.x,'z-index':'9999'}).appendTo('body');
+
+	this.update = update;
+	function update() {
+		this.y += this.speed;
+        if (this.x > $(window).width()-30) {
+            this.reset();
+        }
+		if (($('body').scrollTop()+$(window).height()-25) < this.y) {
+			this.reset();
+		}
+
+        this.x += Math.cos(this.step);
+        this.step += this.stepSize;
+
+		this.element.css({'top':this.y,'left':this.x});
+	}
+
+	this.reset = reset;
+	function reset() {
+		this.x = Math.floor((Math.random() * $(window).width()-32) + 20);
+		this.y = $('body').scrollTop();
+		this.size = Math.floor((Math.random() * 12) + 8);
+		this.speed = Math.floor((Math.random() * 10) + 1);
+    	this.step = 0;
+    	this.stepSize = (Math.floor((Math.random() * 10)))/100;
+
+		this.element.css('left',this.x);
+	}
+}
+
+function letItSnow(){
+    for( i = 0; i < flakes.length; i += 1){
+        flakes[i].update();
+    }
+    
+    snowTimeout = requestAnimationFrame(function(){letItSnow()});
+}
+
+var flakes = [];
+for(i = 0; i < flakeCount; i++){
+    flakes.push(new Flake());
+}
+
+letItSnow();
 
 if ( document.location.hostname == 'allwebcafe.com' || document.location.hostname == 'www.allwebcafe.com' ) {
 	/* Replace the Hero image with the Christmas-y fireplace and stockings image */
@@ -37,7 +86,7 @@ if ( document.location.hostname == 'allwebcafe.com' || document.location.hostnam
 	$('body').wrapInner('<div></div>');
 }
 
-$('img:visible').not('.snowfall-flakes').each(function(i,img) {
+$('img:visible').not('.awc-snow-flake').each(function(i,img) {
 	var origimg = $(this);
 
 	margin = $(this).css('margin');
