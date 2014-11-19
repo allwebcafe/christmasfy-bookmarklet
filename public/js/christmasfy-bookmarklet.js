@@ -86,7 +86,10 @@ if ( document.location.hostname == 'allwebcafe.com' || document.location.hostnam
 	$('body').wrapInner('<div></div>');
 }
 
-$('img:visible').not('.awc-snow-flake').each(function(i,img) {
+$('img:visible').not().not('.awc-snow-flake').each(function(i,img) { console.log($(this).attr('src').substr(($(this).attr('src').lastIndexOf('.') +1)));
+	if ($(this).attr('src').substr(($(this).attr('src').lastIndexOf('.') +1)) == 'png')
+		return true;
+
 	var origimg = $(this);
 
 	margin = $(this).css('margin');
