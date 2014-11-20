@@ -6,6 +6,11 @@
 **						http://foundation.zurb.com/docs/
 */
 /* === Responsive Variables, Functions, and Includes === */
+/* 0, 640px */
+/* 641px, 1024px */
+/* 1025px, 1440px */
+/* 1441px, 1920px */
+/* 1921px */
 /* === Custom SASS Variables === */
 /* Paths */
 /* Colors */
@@ -15,193 +20,209 @@
 
 @font-face { font-family: 'nexa_boldregular'; src: url("/christmasfy-bookmarklet/public/fonts/nexa/Nexa_Free_Bold-webfont.eot"); src: url("/christmasfy-bookmarklet/public/fonts/nexa/Nexa_Free_Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/christmasfy-bookmarklet/public/fonts/nexa/Nexa_Free_Bold-webfont.woff") format("woff"), url("/christmasfy-bookmarklet/public/fonts/nexa/Nexa_Free_Bold-webfont.ttf") format("truetype"), url("/christmasfy-bookmarklet/public/fonts/nexa/Nexa_Free_Bold-webfont.svg#nexa_boldregular") format("svg"); font-weight: normal; font-style: normal; }
 
-/*
-@font-face { font-family: 'nexa_slab_regularregular'; src: url('nexaslab-regular-webfont.eot'); src: url('nexaslab-regular-webfont.eot?#iefix') format('embedded-opentype'), url('nexaslab-regular-webfont.woff2') format('woff2'), url('nexaslab-regular-webfont.woff') format('woff'), url('nexaslab-regular-webfont.ttf') format('truetype'), url('nexaslab-regular-webfont.svg#nexa_slab_regularregular') format('svg'); font-weight: normal; font-style: normal;
-
-}
-*/
-/*
-@font-face { font-family: 'nexa_slab_bookregular'; src: url('nexaslab-book-webfont.eot'); src: url('nexaslab-book-webfont.eot?#iefix') format('embedded-opentype'), url('nexaslab-book-webfont.woff2') format('woff2'), url('nexaslab-book-webfont.woff') format('woff'), url('nexaslab-book-webfont.ttf') format('truetype'), url('nexaslab-book-webfont.svg#nexa_slab_bookregular') format('svg'); font-weight: normal; font-style: normal;
-
-}
-*/
-@font-face { font-family: 'nexa_slab_heavyregular'; src: url("nexaslabheavy-webfont.eot"); src: url("nexaslabheavy-webfont.eot?#iefix") format("embedded-opentype"), url("nexaslabheavy-webfont.woff2") format("woff2"), url("nexaslabheavy-webfont.woff") format("woff"), url("nexaslabheavy-webfont.ttf") format("truetype"), url("nexaslabheavy-webfont.svg#nexa_slab_heavyregular") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'nexa_slab_heavyregular'; src: url("/christmasfy-bookmarklet/public/fonts/nexa/nexaslabheavy-webfont.eot"); src: url("/christmasfy-bookmarklet/public/fonts/nexa/nexaslabheavy-webfont.eot?#iefix") format("embedded-opentype"), url("/christmasfy-bookmarklet/public/fonts/nexa/nexaslabheavy-webfont.woff2") format("woff2"), url("/christmasfy-bookmarklet/public/fonts/nexa/nexaslabheavy-webfont.woff") format("woff"), url("/christmasfy-bookmarklet/public/fonts/nexa/nexaslabheavy-webfont.ttf") format("truetype"), url("/christmasfy-bookmarklet/public/fonts/nexa/nexaslabheavy-webfont.svg#nexa_slab_heavyregular") format("svg"); font-weight: normal; font-style: normal; }
 
 /* === Custom Author Styles !Note! These will appear for all level's unless placed in the media query for screen, please use the i8.scss file for that browser === */
-/* line 82, sass/custom.scss */
+/* line 52, sass/custom.scss */
 h1 { color: #83a14d; font-family: "nexa_boldregular"; font-size: 35px; text-transform: uppercase; }
+/* line 53, sass/custom.scss */
+h1 .tilde { display: inline; }
 
-/* line 84, sass/custom.scss */
+/* line 56, sass/custom.scss */
 h2 { color: #000; font-family: "nexa_lightregular"; font-size: 25px; line-height: 30px; text-transform: uppercase; }
 
-/* line 86, sass/custom.scss */
+/* line 58, sass/custom.scss */
 h4 { color: #000; font-family: "Open Sans"; font-size: 18px; }
 
-/* line 88, sass/custom.scss */
+/* line 60, sass/custom.scss */
 p { color: #333333; font-family: "Open Sans"; font-size: 18px; }
 
-/* line 90, sass/custom.scss */
+/* line 62, sass/custom.scss */
 .awc-wrapper { width: 100%; }
 
-/* line 92, sass/custom.scss */
-.awc-grey-background { background-color: #efefef; }
+/* line 63, sass/custom.scss */
+.awc-grey-background { background-color: #efefef; margin-top: 30px; }
 
-/* line 94, sass/custom.scss */
+/* line 65, sass/custom.scss */
+.text-center { text-align: center; }
+
+/* line 67, sass/custom.scss */
+.edgeLoad-EDGE-49064020 { visibility: hidden; }
+
+/* line 69, sass/custom.scss */
 .how-to { padding-top: 40px; }
 
-/* line 96, sass/custom.scss */
+/* line 71, sass/custom.scss */
 #logo-container { padding: auto; }
-/* line 97, sass/custom.scss */
+/* line 72, sass/custom.scss */
 #logo-container .logo { margin: 0 auto; position: relative; display: block; }
 
-/* line 101, sass/custom.scss */
+/* line 75, sass/custom.scss */
+.imac { position: absolute; left: -130%; top: -25px; width: 936px; max-width: 936px; height: 864px; z-index: 100; }
+
+/* line 77, sass/custom.scss */
 .intro-content { padding-bottom: 50px; }
-/* line 102, sass/custom.scss */
+/* line 78, sass/custom.scss */
 .intro-content p { margin-bottom: 50px; }
-/* line 104, sass/custom.scss */
-.intro-content .awc-button-large { font-family: "nexa_slab_heavyregular"; font-size: 25px; text-transform: uppercase; padding: 20px 100px; }
-/* line 106, sass/custom.scss */
+/* line 80, sass/custom.scss */
+.intro-content .awc-button-large { font-family: "nexa_slab_heavyregular"; font-size: 25px; text-decoration: none; text-transform: uppercase; padding: 20px 100px; }
+/* line 82, sass/custom.scss */
 .intro-content .awc-red-gradient { color: #fff; background: #b42311 url("/christmasfy-bookmarklet/public/img/layout/awc-red-gradient.png") top center repeat-x; }
-/* line 107, sass/custom.scss */
+/* line 83, sass/custom.scss */
 .intro-content .awc-red-gradient:hover { color: #83a14d; }
 
-/* line 114, sass/custom.scss */
+/* line 88, sass/custom.scss */
 #pinetree-top { height: 81px; background: url("/christmasfy-bookmarklet/public/img/layout/pinetree-top-repeat.png") top center repeat-x; }
 
-/* line 116, sass/custom.scss */
+/* line 90, sass/custom.scss */
 #horizontal-rule { height: 37px; background: url("/christmasfy-bookmarklet/public/img/layout/awc-grey-horizontal-rule.png") top center repeat-x; margin: 25px 0 50px; }
 
-/* line 118, sass/custom.scss */
+/* line 92, sass/custom.scss */
 #browser-support { margin-top: 40px; }
-/* line 119, sass/custom.scss */
+/* line 93, sass/custom.scss */
 #browser-support ul { list-style: none; }
-/* line 120, sass/custom.scss */
-#browser-support ul li { display: inline-block; height: 90px; width: 90px; text-align: center; vertical-align: baseline; }
-/* line 121, sass/custom.scss */
-#browser-support ul li img { display: block; margin: 0 auto; }
+/* line 94, sass/custom.scss */
+#browser-support ul li { display: inline-block; text-align: center; vertical-align: text-bottom; height: 90px; }
+/* line 95, sass/custom.scss */
+#browser-support ul li img { display: block; margin: 0 auto 5px; vertical-align: top; }
 
-/* We use this media query to add styles to any device that supports media queries */
-/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
-/* Used to alter styles for screens at least 1280px wide. */
-/* Used to alter styles for screens at least 1440px wide. */
+/* 0, 640px */
+@media only screen and (max-width: upper-bound(0em, 40em)) { /* line 103, sass/custom.scss */
+  h1 .tilde { display: none; }
+  /* line 107, sass/custom.scss */
+  .intro-content .awc-button-large { padding: 20px 50px; }
+  /* line 110, sass/custom.scss */
+  .imac { position: relative; left: auto; top: auto; width: auto; max-width: 100%; height: auto; margin-top: 75px; } }
+/* 641px, 1024px */
+@media only screen and (min-width: lower-bound(40.063em, 64em)) { /* line 117, sass/custom.scss */
+  h1 .tilde { display: inline; }
+  /* line 120, sass/custom.scss */
+  .imac { position: absolute; left: -99%; top: -25px; width: 936px; max-width: 936px; height: 864px; z-index: 100; } }
+/* 1025px+ */
+@media only screen and (min-width: lower-bound(64.063em, 90em)) { /* line 128, sass/custom.scss */
+  h1 .tilde { display: inline; }
+  /* line 132, sass/custom.scss */
+  .intro-content .awc-button-large { padding: 20px 100px; }
+  /* line 135, sass/custom.scss */
+  .imac { position: absolute; left: -100%; top: -25px; width: 936px; max-width: 936px; height: 864px; z-index: 100; } }
 /* Apply styles to screens in landscape orientation */
 /* Apply styles to screens in portrait orientation */
 /* We also use Modernizr to add a .touch class to the body when applicable */
 /* You can prepend this class to anything and it will style only for touch devices */
 /* === 3rd Party Styles === */
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
-/* line 179, sass/custom.scss */
+/* line 167, sass/custom.scss */
 .fancybox-wrap, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image, .fancybox-wrap iframe, .fancybox-wrap object, .fancybox-nav, .fancybox-nav span, .fancybox-tmp { padding: 0; margin: 0; border: 0; outline: none; vertical-align: top; }
 
-/* line 187, sass/custom.scss */
+/* line 175, sass/custom.scss */
 .fancybox-wrap { position: absolute; top: 0; left: 0; z-index: 8020; }
 
-/* line 194, sass/custom.scss */
+/* line 182, sass/custom.scss */
 .fancybox-skin { position: relative; background: #f9f9f9; color: #444; text-shadow: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
 
-/* line 204, sass/custom.scss */
+/* line 192, sass/custom.scss */
 .fancybox-opened { z-index: 8030; }
 
-/* line 208, sass/custom.scss */
+/* line 196, sass/custom.scss */
 .fancybox-opened .fancybox-skin { -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); }
 
-/* line 214, sass/custom.scss */
+/* line 202, sass/custom.scss */
 .fancybox-outer, .fancybox-inner { position: relative; }
 
-/* line 218, sass/custom.scss */
+/* line 206, sass/custom.scss */
 .fancybox-inner { overflow: hidden; }
 
-/* line 222, sass/custom.scss */
+/* line 210, sass/custom.scss */
 .fancybox-type-iframe .fancybox-inner { -webkit-overflow-scrolling: touch; }
 
-/* line 226, sass/custom.scss */
+/* line 214, sass/custom.scss */
 .fancybox-error { color: #444; font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif; margin: 0; padding: 15px; white-space: nowrap; }
 
-/* line 234, sass/custom.scss */
+/* line 222, sass/custom.scss */
 .fancybox-image, .fancybox-iframe { display: block; width: 100%; height: 100%; }
 
-/* line 240, sass/custom.scss */
+/* line 228, sass/custom.scss */
 .fancybox-image { max-width: 100%; max-height: 100%; }
 
-/* line 245, sass/custom.scss */
+/* line 233, sass/custom.scss */
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span { background-image: url("/christmasfy-bookmarklet/public/img/fancybox/fancybox_sprite.png"); }
 
-/* line 249, sass/custom.scss */
+/* line 237, sass/custom.scss */
 #fancybox-loading { position: fixed; top: 50%; left: 50%; margin-top: -22px; margin-left: -22px; background-position: 0 -108px; opacity: 0.8; cursor: pointer; z-index: 8060; }
 
-/* line 261, sass/custom.scss */
+/* line 249, sass/custom.scss */
 #fancybox-loading div { width: 44px; height: 44px; background: url("/christmasfy-bookmarklet/public/img/fancybox/fancybox_loading.gif") center center no-repeat; }
 
-/* line 267, sass/custom.scss */
+/* line 255, sass/custom.scss */
 .fancybox-close { position: absolute; top: -18px; right: -18px; width: 36px; height: 36px; cursor: pointer; z-index: 8040; }
 
-/* line 277, sass/custom.scss */
+/* line 265, sass/custom.scss */
 .fancybox-nav { position: absolute; top: 0; width: 40%; height: 100%; cursor: pointer; text-decoration: none; background: transparent url("/christmasfy-bookmarklet/public/img/blank.gif"); /* helps IE */ -webkit-tap-highlight-color: rgba(0, 0, 0, 0); z-index: 8040; }
 
-/* line 289, sass/custom.scss */
+/* line 277, sass/custom.scss */
 .fancybox-prev { left: 0; }
 
-/* line 293, sass/custom.scss */
+/* line 281, sass/custom.scss */
 .fancybox-next { right: 0; }
 
-/* line 297, sass/custom.scss */
+/* line 285, sass/custom.scss */
 .fancybox-nav span { position: absolute; top: 50%; width: 36px; height: 34px; margin-top: -18px; cursor: pointer; z-index: 8040; visibility: hidden; }
 
-/* line 308, sass/custom.scss */
+/* line 296, sass/custom.scss */
 .fancybox-prev span { left: 10px; background-position: 0 -36px; }
 
-/* line 313, sass/custom.scss */
+/* line 301, sass/custom.scss */
 .fancybox-next span { right: 10px; background-position: 0 -72px; }
 
-/* line 318, sass/custom.scss */
+/* line 306, sass/custom.scss */
 .fancybox-nav:hover span { visibility: visible; }
 
-/* line 322, sass/custom.scss */
+/* line 310, sass/custom.scss */
 .fancybox-tmp { position: absolute; top: -99999px; left: -99999px; visibility: hidden; max-width: 99999px; max-height: 99999px; overflow: visible !important; }
 
 /* Overlay helper */
-/* line 334, sass/custom.scss */
+/* line 322, sass/custom.scss */
 .fancybox-lock { overflow: hidden !important; width: auto; }
 
-/* line 339, sass/custom.scss */
+/* line 327, sass/custom.scss */
 .fancybox-lock body { overflow: hidden !important; }
 
-/* line 343, sass/custom.scss */
+/* line 331, sass/custom.scss */
 .fancybox-lock-test { overflow-y: hidden !important; }
 
-/* line 347, sass/custom.scss */
+/* line 335, sass/custom.scss */
 .fancybox-overlay { position: absolute; top: 0; left: 0; overflow: hidden; display: none; z-index: 8010; background: url("/christmasfy-bookmarklet/public/img/fancybox/fancybox_overlay.png"); }
 
-/* line 357, sass/custom.scss */
+/* line 345, sass/custom.scss */
 .fancybox-overlay-fixed { position: fixed; bottom: 0; right: 0; }
 
-/* line 363, sass/custom.scss */
+/* line 351, sass/custom.scss */
 .fancybox-lock .fancybox-overlay { overflow: auto; overflow-y: scroll; }
 
 /* Title helper */
-/* line 370, sass/custom.scss */
+/* line 358, sass/custom.scss */
 .fancybox-title { visibility: hidden; font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif; position: relative; text-shadow: none; z-index: 8050; }
 
-/* line 378, sass/custom.scss */
+/* line 366, sass/custom.scss */
 .fancybox-opened .fancybox-title { visibility: visible; }
 
-/* line 382, sass/custom.scss */
+/* line 370, sass/custom.scss */
 .fancybox-title-float-wrap { position: absolute; bottom: 0; right: 50%; margin-bottom: -35px; z-index: 8050; text-align: center; }
 
-/* line 391, sass/custom.scss */
+/* line 379, sass/custom.scss */
 .fancybox-title-float-wrap .child { display: inline-block; margin-right: -100%; padding: 2px 20px; background: transparent; /* Fallback for web browsers that doesn't support RGBa */ background: rgba(0, 0, 0, 0.8); -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; text-shadow: 0 1px 2px #222; color: #FFF; font-weight: bold; line-height: 24px; white-space: nowrap; }
 
-/* line 407, sass/custom.scss */
+/* line 395, sass/custom.scss */
 .fancybox-title-outside-wrap { position: relative; margin-top: 10px; color: #fff; }
 
-/* line 413, sass/custom.scss */
+/* line 401, sass/custom.scss */
 .fancybox-title-inside-wrap { padding-top: 10px; }
 
-/* line 417, sass/custom.scss */
+/* line 405, sass/custom.scss */
 .fancybox-title-over-wrap { position: absolute; bottom: 0; left: 0; color: #fff; padding: 10px; background: #000; background: rgba(0, 0, 0, 0.8); }
 
 /*Retina graphics!*/
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { /* line 432, sass/custom.scss */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { /* line 420, sass/custom.scss */
   #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span { background-image: url("/christmasfy-bookmarklet/public/img/fancybox/fancybox_sprite@2x.png"); background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image*/ }
-  /* line 437, sass/custom.scss */
+  /* line 425, sass/custom.scss */
   #fancybox-loading div { background-image: url("/christmasfy-bookmarklet/public/img/fancybox/fancybox_loading@2x.gif"); background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/ } }

@@ -18,8 +18,18 @@
 	<link rel="stylesheet" href="/christmasfy-bookmarklet/public/css/custom.css" />
 	<!--[if IE 8]><link rel="stylesheet" href="/christmasfy-bookmarklet/public/css/ie8.css" /><![endif]-->
 	<!--[if gte IE 9]><style type="text/css"> .gradient {filter: none;}</style><![endif]-->
-	<script src="/christmasfy-bookmarklet/public/js/vendor/custom.modernizr.js"></script>
-  
+	<script src="/christmasfy-bookmarklet/public/js/vendor/modernizr.js"></script>
+	<script type="text/javascript" charset="utf-8" src="http://animate.adobe.com/runtime/5.0.0/edge.5.0.0.min.js"></script>
+	<script>
+		AdobeEdge.loadComposition('bookmark_animation', 'EDGE-49064020', {
+			scaleToFit: "none",
+			centerStage: "none",
+			minW: "0",
+			maxW: "undefined",
+			width: "460px",
+			height: "380px"
+		}, {dom: [ ]}, {dom: [ ]});
+	</script>
 </head>
 
 	<body>
@@ -41,26 +51,29 @@
 		</div>
 		<div class="row">
 			<div class="large-12 columns text-center intro-content">
-				<h1><span class="hide-on-small">~ </span>Join the allwebcafe spirit<span class="hide-on-small"> ~</span></h1>
+				<h1><span class="tilde">~ </span>Join the allwebcafe spirit<span class="tilde"> ~</span></h1>
 				<p class="large-8 large-offset-2 columns">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				<a class="awc-button-large awc-red-gradient" href="javascript:(function() { var jsCode = document.createElement('script'); jsCode.setAttribute('src', '//www.allwebcafe.com/public/js/labs/christmasfy-bookmarklet.min.js'); document.body.appendChild(jsCode); }());" alt="Christmasfy Your Website Bookmarklet">Christmasfy Me!</a>
 			</div>
 		</div>
 		<div class="awc-wrapper awc-grey-background">
 			<div class="row">
-				<div class="large-6 columns"></div>
-				<div class="large-6 columns how-to">
+				<div class="small-12 medium-6 large-5 columns">
+					<img class="imac" src="/christmasfy-bookmarklet/public/img/layout/imac.png" />
+				</div>
+				<div class="small-12 medium-6 large-6 large-offset-1 columns how-to">
 					<h2>How to bookmark it</h2>
 					<p>It's easy! Drag the button above to your bookmarks bar at the top of your browser window.</p>
+					<div id="Stage" class="EDGE-49064020"> </div>
 				</div>
 			</div>
 		</div>
 		
 		<div class="row">
-			<div class="large-6 columns"></div>
-			<div id="browser-support" class="large-6 columns">
+			<div class="large-5 columns"></div>
+			<div id="browser-support" class="large-7 columns">
 				<h4>Supported Browsers:</h4>
-				<ul>
+				<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-5">
 					<li><img src="/christmasfy-bookmarklet/public/img/layout/chrome-icon.png" title="Supported in Chrome X+"/> Chrome X+</li>
 					<li><img src="/christmasfy-bookmarklet/public/img/layout/firefox-icon.png" title="Supported in Firefox X+"/> Firefox X+</li>
 					<li><img src="/christmasfy-bookmarklet/public/img/layout/ie-icon.png" title="Supported in Internet Explorer 9+"/> IE 9+</li>
@@ -71,18 +84,11 @@
 		</div>
 		
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	  <script>window.jQuery || document.write('<script src="/christmasfy-bookmarklet/public/js/vendor/jquery.min.js"><\/script>')</script>
 	  <script src="/christmasfy-bookmarklet/public/js/foundation.min.js"></script>
 		<script src="/christmasfy-bookmarklet/public/js/plugins.min.js"></script>
-<!--
-	  <?php if (ENVIRONMENT == "production") : 
-	    #Production will use the most compressed versions, combined with codekit this will be easy to maintain and debug on other enviroments. ?>
-			<script src="/christmasfy-bookmarklet/public/js/ready.min.js"></script>
-		<?php else : ?>
--->
-			<script> $(document).foundation(function(response){console.log(response.errors);}); </script>
-			<script src="/christmasfy-bookmarklet/public/js/ready.js"></script>
-<!-- 		<?php endif; ?> -->
+		<script src="/christmasfy-bookmarklet/public/js/ready.min.js"></script>
+
+
 
 	</body>
 </html>

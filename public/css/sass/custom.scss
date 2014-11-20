@@ -34,44 +34,14 @@
 
 }
 
-/*
-@font-face {
-    font-family: 'nexa_slab_regularregular';
-    src: url('nexaslab-regular-webfont.eot');
-    src: url('nexaslab-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('nexaslab-regular-webfont.woff2') format('woff2'),
-         url('nexaslab-regular-webfont.woff') format('woff'),
-         url('nexaslab-regular-webfont.ttf') format('truetype'),
-         url('nexaslab-regular-webfont.svg#nexa_slab_regularregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-*/
-
-/*
-@font-face {
-    font-family: 'nexa_slab_bookregular';
-    src: url('nexaslab-book-webfont.eot');
-    src: url('nexaslab-book-webfont.eot?#iefix') format('embedded-opentype'),
-         url('nexaslab-book-webfont.woff2') format('woff2'),
-         url('nexaslab-book-webfont.woff') format('woff'),
-         url('nexaslab-book-webfont.ttf') format('truetype'),
-         url('nexaslab-book-webfont.svg#nexa_slab_bookregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-*/
-
 @font-face {
     font-family: 'nexa_slab_heavyregular';
-    src: url('nexaslabheavy-webfont.eot');
-    src: url('nexaslabheavy-webfont.eot?#iefix') format('embedded-opentype'),
-         url('nexaslabheavy-webfont.woff2') format('woff2'),
-         url('nexaslabheavy-webfont.woff') format('woff'),
-         url('nexaslabheavy-webfont.ttf') format('truetype'),
-         url('nexaslabheavy-webfont.svg#nexa_slab_heavyregular') format('svg');
+    src: url('#{$path-font}nexa/nexaslabheavy-webfont.eot');
+    src: url('#{$path-font}nexa/nexaslabheavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$path-font}nexa/nexaslabheavy-webfont.woff2') format('woff2'),
+         url('#{$path-font}nexa/nexaslabheavy-webfont.woff') format('woff'),
+         url('#{$path-font}nexa/nexaslabheavy-webfont.ttf') format('truetype'),
+         url('#{$path-font}nexa/nexaslabheavy-webfont.svg#nexa_slab_heavyregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -79,7 +49,9 @@
 
 /* === Custom Author Styles !Note! These will appear for all level's unless placed in the media query for screen, please use the i8.scss file for that browser === */
 
-h1 { color: $awc-green; font-family: $nexabold; font-size: 35px; text-transform: uppercase; }
+h1 { color: $awc-green; font-family: $nexabold; font-size: 35px; text-transform: uppercase;
+	.tilde { display: inline; }
+}
 
 h2 { color: #000; font-family: $nexa; font-size: 25px; line-height: 30px; text-transform: uppercase; }
 
@@ -88,8 +60,11 @@ h4 { color: #000; font-family: $opensans; font-size: 18px; }
 p { color: $awc-copy-grey; font-family: $opensans; font-size: 18px; }
 
 .awc-wrapper { width: 100%; }
+.awc-grey-background { background-color: $awc-grey; margin-top: 30px; }
 
-.awc-grey-background { background-color: $awc-grey; }
+.text-center { text-align: center; } 
+
+.edgeLoad-EDGE-49064020 { visibility: hidden; }
 
 .how-to { padding-top: 40px; }
 
@@ -97,11 +72,12 @@ p { color: $awc-copy-grey; font-family: $opensans; font-size: 18px; }
 	.logo { margin: 0 auto; position: relative; display: block; }	
 }
 
+.imac { position: absolute; left: -130%; top: -25px; width: 936px; max-width: 936px; height: 864px; z-index: 100; }
 
 .intro-content { padding-bottom: 50px;
 	p { margin-bottom: 50px; }
 	
-	.awc-button-large { font-family: $nexaslabheavy; font-size: 25px; text-transform: uppercase; padding: 20px 100px; }
+	.awc-button-large { font-family: $nexaslabheavy; font-size: 25px; text-decoration: none; text-transform: uppercase; padding: 20px 100px; }
 
 	.awc-red-gradient { color: #fff; background: #b42311 url('#{$path-img}layout/awc-red-gradient.png') top center repeat-x; 
 		&:hover { color: $awc-green; }
@@ -109,43 +85,55 @@ p { color: $awc-copy-grey; font-family: $opensans; font-size: 18px; }
 	
 }
 
-
-
 #pinetree-top { height: 81px; background: url('#{$path-img}layout/pinetree-top-repeat.png') top center repeat-x; }
 
 #horizontal-rule { height: 37px; background: url('#{$path-img}layout/awc-grey-horizontal-rule.png') top center repeat-x; margin: 25px 0 50px; }
 
 #browser-support { margin-top: 40px;
 	ul { list-style: none;
-		li { display: inline-block; height: 90px; width: 90px; text-align: center; vertical-align: baseline; 
-			img { display: block; margin: 0 auto; }
+		li { display: inline-block; text-align: center; vertical-align: text-bottom; height: 90px;
+			img { display: block; margin: 0 auto 5px; vertical-align: top; }
 		}
 	}
 }
 
-
-
-
-
-
-/* We use this media query to add styles to any device that supports media queries */
-@media #{$screen} { 
+/* 0, 640px */
+@media #{$small-only} { 
+	h1 { 
+		.tilde { display: none; }
+	}
+	
+	.intro-content {
+		.awc-button-large { padding: 20px 50px; }
+	}
+	
+	.imac { position: relative; left: auto; top: auto; width: auto; max-width: 100%; height: auto; margin-top: 75px; }
 	
 }
 
-/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
-@media #{$small} { 
+/* 641px, 1024px */
+@media #{$medium-up} {
+	h1 { 
+		.tilde { display: inline; }
+	}
+	
+	.imac { position: absolute; left: -99%; top: -25px; width: 936px; max-width: 936px; height: 864px; z-index: 100; }
 	
 }
 
-/* Used to alter styles for screens at least 1280px wide. */
-@media #{$medium} {
-
-}
-
-/* Used to alter styles for screens at least 1440px wide. */
-@media #{$large} { 
-
+/* 1025px+ */
+@media #{$large-up} { 
+	
+	h1 { 
+		.tilde { display: inline; }
+	}
+		
+	.intro-content {
+		.awc-button-large { padding: 20px 100px; }
+	}
+	
+	.imac { position: absolute; left: -100%; top: -25px; width: 936px; max-width: 936px; height: 864px; z-index: 100; }
+	
 }
 
 /* Apply styles to screens in landscape orientation */

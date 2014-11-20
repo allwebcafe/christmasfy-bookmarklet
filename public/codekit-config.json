@@ -44,17 +44,6 @@
       "outputAbbreviatedPath" : "\/js\/datatables.min.min.js",
       "fileType" : 64
     },
-    "\/js\/foundation\/foundation.interchange.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.interchange.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/foundation.interchange.min.js",
-      "fileType" : 64
-    },
     "\/js\/plugins\/jquery.fancybox.pack.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -77,16 +66,16 @@
       "outputAbbreviatedPath" : "\/js\/jquery.fancybox-thumbs.min.js",
       "fileType" : 64
     },
-    "\/js\/foundation\/foundation.joyride.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
+    "\/img\/animation\/browser.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.joyride.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/foundation.joyride.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/img\/animation\/browser.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/animation\/browser.png",
+      "initialSize" : 28993,
+      "fileType" : 8192
     },
     "\/css\/ie8-grid-foundation-4.css" : {
       "ignoreWasSetByUser" : 0,
@@ -97,6 +86,39 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
+    "\/img\/layout\/opera-icon.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/layout\/opera-icon.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/layout\/opera-icon.png",
+      "initialSize" : 4825,
+      "fileType" : 8192
+    },
+    "\/js\/vendor\/jquery.cookie.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/vendor\/jquery.cookie.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/jquery.cookie.min.js",
+      "fileType" : 64
+    },
+    "\/js\/plugins\/validate.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/plugins\/validate.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/validate.min.min.js",
+      "fileType" : 64
+    },
     "\/js\/ready.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -106,17 +128,6 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/js\/ready.min.js",
-      "fileType" : 64
-    },
-    "\/js\/foundation\/foundation.dropdown.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.dropdown.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/foundation.dropdown.min.js",
       "fileType" : 64
     },
     "\/img\/fancybox\/fancybox_overlay.png" : {
@@ -130,26 +141,15 @@
       "initialSize" : 997,
       "fileType" : 8192
     },
-    "\/js\/plugins\/validate.min.js" : {
+    "\/js\/plugins\/jquery.cycle2.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins\/validate.min.js",
+      "inputAbbreviatedPath" : "\/js\/plugins\/jquery.cycle2.min.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/validate.min.min.js",
-      "fileType" : 64
-    },
-    "\/js\/vendor\/custom.modernizr.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/vendor\/custom.modernizr.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/custom.modernizr.min.js",
+      "outputAbbreviatedPath" : "\/js\/jquery.cycle2.min.min.js",
       "fileType" : 64
     },
     "\/js\/christmasfy-bookmarklet.min.js" : {
@@ -163,15 +163,15 @@
       "outputAbbreviatedPath" : "\/js\/christmasfy-bookmarklet.min.min.js",
       "fileType" : 64
     },
-    "\/js\/plugins\/jquery.cycle2.min.js" : {
+    "\/js\/vendor\/placeholder.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins\/jquery.cycle2.min.js",
+      "inputAbbreviatedPath" : "\/js\/vendor\/placeholder.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/jquery.cycle2.min.min.js",
+      "outputAbbreviatedPath" : "\/js\/placeholder.min.js",
       "fileType" : 64
     },
     "\/css\/foundation.css" : {
@@ -183,17 +183,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/js\/foundation\/foundation.cookie.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.cookie.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/foundation.cookie.min.js",
-      "fileType" : 64
-    },
     "\/css\/vendor\/fancybox\/helpers\/jquery.fancybox-buttons.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -204,6 +193,17 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/js\/jquery.fancybox-buttons.min.js",
       "fileType" : 64
+    },
+    "\/img\/layout\/firefox-icon.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/layout\/firefox-icon.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/layout\/firefox-icon.png",
+      "initialSize" : 6129,
+      "fileType" : 8192
     },
     "\/js\/plugins\/jquery.transit.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -315,28 +315,6 @@
       "outputAbbreviatedPath" : "\/js\/jquery.fancybox-media.min.js",
       "fileType" : 64
     },
-    "\/js\/vendor\/zepto.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/vendor\/zepto.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/zepto.min.js",
-      "fileType" : 64
-    },
-    "\/js\/foundation\/foundation.forms.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.forms.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/foundation.forms.min.js",
-      "fileType" : 64
-    },
     "\/css\/normalize.min.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -399,17 +377,6 @@
       "initialSize" : 1080,
       "fileType" : 8192
     },
-    "\/js\/foundation\/foundation.magellan.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.magellan.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/foundation.magellan.min.js",
-      "fileType" : 64
-    },
     "\/js\/ready.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -421,16 +388,16 @@
       "outputAbbreviatedPath" : "\/js\/ready.min.min.js",
       "fileType" : 64
     },
-    "\/js\/foundation\/foundation.topbar.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
+    "\/img\/layout\/safari-icon.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.topbar.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/foundation.topbar.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/img\/layout\/safari-icon.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/layout\/safari-icon.png",
+      "initialSize" : 6615,
+      "fileType" : 8192
     },
     "\/img\/fancybox\/fancybox_sprite@2x.png" : {
       "ignoreWasSetByUser" : 0,
@@ -454,6 +421,17 @@
       "outputAbbreviatedPath" : "\/js\/plugins.min.min.js",
       "fileType" : 64
     },
+    "\/img\/layout\/chrome-icon.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/layout\/chrome-icon.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/layout\/chrome-icon.png",
+      "initialSize" : 5169,
+      "fileType" : 8192
+    },
     "\/css\/sass\/ie8.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -466,37 +444,26 @@
       "fileType" : 4,
       "debugStyle" : 1
     },
-    "\/js\/foundation\/foundation.orbit.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
+    "\/img\/animation\/btn.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.orbit.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/foundation.orbit.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/img\/animation\/btn.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/animation\/btn.png",
+      "initialSize" : 7978,
+      "fileType" : 8192
     },
-    "\/js\/foundation\/foundation.placeholder.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
+    "\/js\/vendor\/modernizr.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.placeholder.js",
+      "inputAbbreviatedPath" : "\/js\/vendor\/modernizr.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/foundation.placeholder.min.js",
-      "fileType" : 64
-    },
-    "\/js\/foundation\/foundation.alerts.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.alerts.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/foundation.alerts.min.js",
+      "outputAbbreviatedPath" : "\/js\/modernizr.min.js",
       "fileType" : 64
     },
     "\/css\/ie8.css" : {
@@ -508,31 +475,9 @@
       "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 16
     },
-    "\/js\/vendor\/jquery.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/vendor\/jquery.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/jquery.min.min.js",
-      "fileType" : 64
-    },
-    "\/js\/foundation\/foundation.clearing.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.clearing.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/foundation.clearing.min.js",
-      "fileType" : 64
-    },
     "\/js\/foundation\/foundation.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/foundation\/foundation.js",
@@ -550,6 +495,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
+    "\/img\/layout\/ie-icon.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/layout\/ie-icon.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/layout\/ie-icon.png",
+      "initialSize" : 6193,
+      "fileType" : 8192
+    },
     "\/css\/vendor\/fancybox\/helpers\/jquery.fancybox-buttons.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -558,17 +514,6 @@
       "inputAbbreviatedPath" : "\/css\/vendor\/fancybox\/helpers\/jquery.fancybox-buttons.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
-    },
-    "\/js\/foundation\/foundation.section.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.section.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/foundation.section.min.js",
-      "fileType" : 64
     },
     "\/js\/jquery.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -581,6 +526,17 @@
       "outputAbbreviatedPath" : "\/js\/jquery.min.min.js",
       "fileType" : 64
     },
+    "\/js\/vendor\/fastclick.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/vendor\/fastclick.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/fastclick.min.js",
+      "fileType" : 64
+    },
     "\/img\/fancybox\/fancybox_sprite.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -590,6 +546,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/img\/fancybox\/fancybox_sprite.png",
       "initialSize" : 1362,
+      "fileType" : 8192
+    },
+    "\/img\/layout\/imac.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/layout\/imac.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/layout\/imac.png",
+      "initialSize" : 157725,
       "fileType" : 8192
     },
     "\/js\/plugins\/awcinfinitescroll.jquery.js" : {
@@ -614,17 +581,6 @@
       "initialSize" : 991,
       "fileType" : 8192
     },
-    "\/js\/foundation\/foundation.reveal.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.reveal.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/foundation.reveal.min.js",
-      "fileType" : 64
-    },
     "\/js\/plugins\/jquery.easing.1.3.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -634,17 +590,6 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/js\/jquery.easing.1.3.min.js",
-      "fileType" : 64
-    },
-    "\/js\/foundation\/foundation.tooltips.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/foundation\/foundation.tooltips.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/foundation.tooltips.min.js",
       "fileType" : 64
     }
   },
