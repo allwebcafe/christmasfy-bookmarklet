@@ -108,17 +108,6 @@
       "outputAbbreviatedPath" : "\/js\/jquery.cookie.min.js",
       "fileType" : 64
     },
-    "\/js\/plugins\/validate.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins\/validate.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/validate.min.min.js",
-      "fileType" : 64
-    },
     "\/js\/ready.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -128,6 +117,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/js\/ready.min.js",
+      "fileType" : 64
+    },
+    "\/js\/plugins\/validate.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/plugins\/validate.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/validate.min.min.js",
       "fileType" : 64
     },
     "\/img\/fancybox\/fancybox_overlay.png" : {
@@ -432,17 +432,6 @@
       "outputAbbreviatedPath" : "\/js\/plugins.min.min.js",
       "fileType" : 64
     },
-    "\/img\/layout\/chrome-icon.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/layout\/chrome-icon.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/layout\/chrome-icon.png",
-      "initialSize" : 5169,
-      "fileType" : 8192
-    },
     "\/css\/sass\/ie8.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -454,6 +443,17 @@
       "outputAbbreviatedPath" : "\/css\/ie8.css",
       "fileType" : 4,
       "debugStyle" : 1
+    },
+    "\/img\/layout\/chrome-icon.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/layout\/chrome-icon.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/layout\/chrome-icon.png",
+      "initialSize" : 5169,
+      "fileType" : 8192
     },
     "\/img\/layout\/background-repeat.png" : {
       "ignoreWasSetByUser" : 0,
