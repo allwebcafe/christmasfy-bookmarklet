@@ -43,7 +43,7 @@
   /* line 70, sass/custom.scss */
   .text-center { text-align: center; }
   /* line 71, sass/custom.scss */
-  .how-to { padding-top: 40px; }
+  .how-to { padding-top: 40px; text-align: center; }
   /* line 73, sass/custom.scss */
   #logo-container { padding: auto; }
   /* line 74, sass/custom.scss */
@@ -84,10 +84,12 @@
 @media only screen and (min-width: 40.063em) { /* line 114, sass/custom.scss */
   h1 .tilde { display: inline; } }
 /* 1025px+ */
-@media only screen and (min-width: 64.063em) { /* line 126, sass/custom.scss */
+@media only screen and (min-width: 64.063em) { /* line 124, sass/custom.scss */
   .imac { position: absolute; left: -150%; top: -100px; width: 936px; max-width: 936px; height: 864px; z-index: 100; }
-  /* line 129, sass/custom.scss */
+  /* line 127, sass/custom.scss */
   .intro-content .awc-button-large { padding: 20px 100px; }
+  /* line 130, sass/custom.scss */
+  .how-to { text-align: left; }
   /* line 132, sass/custom.scss */
   #awc-happy-holidays { position: relative; }
   /* line 133, sass/custom.scss */

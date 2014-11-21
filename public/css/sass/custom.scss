@@ -68,7 +68,7 @@
 	.awc-wrapper { width: 100%; }
 	.awc-grey-background { background-color: $awc-grey; margin-top: 30px; }
 	.text-center { text-align: center; } 
-	.how-to { padding-top: 40px; }
+	.how-to { padding-top: 40px; text-align: center; }
 	
 	#logo-container { padding: auto;
 		.logo { margin: 0 auto; position: relative; display: block; }	
@@ -113,10 +113,8 @@
 	h1 { 
 		.tilde { display: inline; } 
 	}
+
 	
-	#awc-happy-holidays { 
-		.copy-block { }
-	}
 	
 }
 
@@ -128,6 +126,8 @@
 	.intro-content {
 		.awc-button-large { padding: 20px 100px; }
 	}
+	
+	.how-to { text-align: left; }
 	
 	#awc-happy-holidays { position: relative;
 		.copy-block { position: absolute; top: 44px; }
