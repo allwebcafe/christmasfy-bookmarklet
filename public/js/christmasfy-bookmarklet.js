@@ -265,17 +265,6 @@ if($("#awc-shnow").length==0)
 	box5img.onload = function(){ imageLoaded(); };
 	box6img.onload = function(){ imageLoaded(); };
 
-	var tree = new xmasTree(treeImage, 0.35);
-
-	var treedelay = parseInt(60 * 1);
-	var treeticker = 0;
-	var scalegiftanim = 0.5;
-	var giftdelay = [parseInt(60 * 1.4), parseInt(60 * 1.5), parseInt(60 * 1.6), parseInt(60 * 1.8), parseInt(60 * 1.85), parseInt(60 * 2)];
-	var giftticker = [0, 0, 0, 0, 0, 0];
-
-	var gifts = [new box(box1img, 196, awctreecanvas.height-123, 122, 122), new box(box2img, 248, awctreecanvas.height-101, 117, 139), new box(box3img, 445, awctreecanvas.height-110, 157, 145), new box(box4img, 319, awctreecanvas.height-52, 151, 168), new box(box5img, 575, awctreecanvas.height-120, 115, 131), new box(box6img, 530, awctreecanvas.height-80, 116, 128)];
-
-
 	/* OUR CLACKER OBJECT */
 	function circle(x, y, pointx, pointy, radius, image)
 	{
@@ -432,10 +421,10 @@ if($("#awc-shnow").length==0)
 			var treey = -this.height;
 			awctreectx.drawImage(this.image, treex, treey, this.width, this.height);
 
-			awctreectx.restore();
-
 			/* DO THE LIGHTS UP WUT WUT */
 			this.drawLights(treex, treey);
+
+			awctreectx.restore();
 
 			/* MAKE SNOW PUFFS */
 			awctreectx.globalAlpha = this.pufftransp;
@@ -635,6 +624,19 @@ if($("#awc-shnow").length==0)
 		new circle(247, 164, 227, 164, 37, images[3]),
 		new circle(251, 98, 283, 98, 38, images[4])
 		];
+
+	
+
+	var tree = new xmasTree(treeImage, 0.35);
+
+	var treedelay = parseInt(60 * 1);
+	var treeticker = 0;
+	var scalegiftanim = 0.5;
+	var giftdelay = [parseInt(60 * 1.4), parseInt(60 * 1.5), parseInt(60 * 1.6), parseInt(60 * 1.8), parseInt(60 * 1.85), parseInt(60 * 2)];
+	var giftticker = [0, 0, 0, 0, 0, 0];
+
+	var gifts = [new box(box1img, 196, awctreecanvas.height-123, 122, 122), new box(box2img, 248, awctreecanvas.height-101, 117, 139), new box(box3img, 445, awctreecanvas.height-110, 157, 145), new box(box4img, 319, awctreecanvas.height-52, 151, 168), new box(box5img, 575, awctreecanvas.height-120, 115, 131), new box(box6img, 530, awctreecanvas.height-80, 116, 128)];
+
 
 
 
