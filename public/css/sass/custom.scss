@@ -49,102 +49,92 @@
 
 /* === Custom Author Styles !Note! These will appear for all level's unless placed in the media query for screen, please use the i8.scss file for that browser === */
 
-h1 { color: $awc-green; font-family: $nexabold; font-size: 35px; text-transform: uppercase;
-	.tilde { display: inline; }
-}
-
-h2 { color: #000; font-family: $nexa; font-size: 25px; line-height: 30px; text-transform: uppercase; }
-
-h4 { color: #000; font-family: $opensans; font-size: 18px; }
-
-p { color: $awc-copy-grey; font-family: $opensans; font-size: 18px; }
-
-.awc-wrapper { width: 100%; }
-.awc-grey-background { background-color: $awc-grey; margin-top: 30px; }
-
-.text-center { text-align: center; } 
-
-.edgeLoad-EDGE-49064020 { visibility: hidden; }
-
-.how-to { padding-top: 40px; }
-
-#logo-container { padding: auto;
-	.logo { margin: 0 auto; position: relative; display: block; }	
-}
-
-.imac { position: absolute; left: -130%; top: -25px; width: 936px; max-width: 936px; height: 864px; z-index: 100; }
-
-.intro-content { padding-bottom: 50px;
-	p { margin-bottom: 50px; }
-	
-	.awc-button-large { font-family: $nexaslabheavy; font-size: 25px; text-decoration: none; text-transform: uppercase; padding: 20px 100px; }
-
-	.awc-red-gradient { color: #fff; background: #b42311 url('#{$path-img}layout/awc-red-gradient.png') top center repeat-x; 
-		&:hover { color: $awc-green; }
-	}
-	
-}
-
-#pinetree-top { height: 81px; background: url('#{$path-img}layout/pinetree-top-repeat.png') top center repeat-x; }
-
-#horizontal-rule { height: 37px; background: url('#{$path-img}layout/awc-grey-horizontal-rule.png') top center repeat-x; margin: 25px 0 50px; }
-
-#browser-support { margin-top: 40px;
-	ul { list-style: none;
-		li { display: inline-block; text-align: center; vertical-align: text-bottom; height: 90px;
-			img { display: block; margin: 0 auto 5px; vertical-align: top; }
-		}
-	}
-}
 
 /* 0, 640px */
-@media #{$small-only} { 
-	h1 { 
+@media #{$small-up} {
+	
+	html, body { background: #fff url('#{$path-img}layout/background-repeat.png') top left repeat-x; }
+	 
+	h1 { color: $awc-green; font-family: $nexabold; font-size: 35px; text-transform: uppercase;
 		.tilde { display: none; }
 	}
 	
-	.intro-content {
-		.awc-button-large { padding: 20px 50px; }
+	h2 { color: #000; font-family: $nexa; font-size: 25px; line-height: 30px; text-transform: uppercase; }
+
+	h4 { color: #000; font-family: $opensans; font-size: 18px; }
+	
+	p { color: $awc-copy-grey; font-family: $opensans; font-size: 18px; }
+	
+	.awc-wrapper { width: 100%; }
+	.awc-grey-background { background-color: $awc-grey; margin-top: 30px; }
+	.text-center { text-align: center; } 
+	.how-to { padding-top: 40px; }
+	
+	#logo-container { padding: auto;
+		.logo { margin: 0 auto; position: relative; display: block; }	
 	}
 	
+	.intro-content { padding-bottom: 50px;
+		p { margin-bottom: 50px; }
+		
+		.awc-button-large { font-family: $nexaslabheavy; font-size: 25px; text-decoration: none; text-transform: uppercase; padding: 20px 50px; }
+	
+		.awc-red-gradient { color: #fff; background: #b42311 url('#{$path-img}layout/awc-red-gradient.png') top center repeat-x; 
+			&:hover { color: $awc-green; }
+		}
+		
+	}
+		
 	.imac { position: relative; left: auto; top: auto; width: auto; max-width: 100%; height: auto; margin-top: 75px; }
+	
+	#pinetree-top { height: 81px; background: url('#{$path-img}layout/pinetree-top-repeat.png') top center repeat-x; 
+		img { margin: 0 auto; display: block; }
+	}
+
+	#horizontal-rule { height: 37px; background: url('#{$path-img}layout/awc-grey-horizontal-rule.png') top center repeat-x; margin: 25px 0 50px; }
+	
+	#browser-support { margin-top: 40px;
+		ul { list-style: none;
+			li { display: inline-block; text-align: center; vertical-align: text-bottom; height: 90px;
+				img { display: block; margin: 0 auto 5px; vertical-align: top; }
+			}
+		}
+	}
+	
+	#awc-happy-holidays { height: 105px; margin: 50px auto;
+		.copy-block { color: $awc-green; font-family: $nexabold; font-size: 15px; letter-spacing: 2px; text-transform: uppercase; text-align: center; }
+		img { display: block; margin: 10px auto 0; }
+	}
 	
 }
 
 /* 641px, 1024px */
-@media #{$medium-up} {
+@media only screen and (min-width: 40.063em) {
 	h1 { 
-		.tilde { display: inline; }
+		.tilde { display: inline; } 
 	}
 	
-	.imac { position: absolute; left: -99%; top: -25px; width: 936px; max-width: 936px; height: 864px; z-index: 100; }
+	#awc-happy-holidays { 
+		.copy-block { }
+	}
 	
 }
 
 /* 1025px+ */
-@media #{$large-up} { 
+@media only screen and (min-width: 64.063em) { 
 	
-	h1 { 
-		.tilde { display: inline; }
-	}
+	.imac { position: absolute; left: -150%; top: -100px; width: 936px; max-width: 936px; height: 864px; z-index: 100; }
 		
 	.intro-content {
 		.awc-button-large { padding: 20px 100px; }
 	}
 	
-	.imac { position: absolute; left: -100%; top: -25px; width: 936px; max-width: 936px; height: 864px; z-index: 100; }
-	
+	#awc-happy-holidays { position: relative;
+		.copy-block { position: absolute; top: 44px; }
+	}
+		
 }
 
-/* Apply styles to screens in landscape orientation */
-@media #{$landscape} { 
-	
-}
-
-/* Apply styles to screens in portrait orientation */
-@media #{$portrait} { 
-	
-}
 
 /* We also use Modernizr to add a .touch class to the body when applicable */
 /* You can prepend this class to anything and it will style only for touch devices */

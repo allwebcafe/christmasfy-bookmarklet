@@ -108,17 +108,6 @@
       "outputAbbreviatedPath" : "\/js\/jquery.cookie.min.js",
       "fileType" : 64
     },
-    "\/js\/ready.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/ready.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/ready.min.js",
-      "fileType" : 64
-    },
     "\/js\/plugins\/validate.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -128,6 +117,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/js\/validate.min.min.js",
+      "fileType" : 64
+    },
+    "\/js\/ready.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/ready.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/ready.min.js",
       "fileType" : 64
     },
     "\/img\/fancybox\/fancybox_overlay.png" : {
@@ -182,6 +182,17 @@
       "inputAbbreviatedPath" : "\/css\/foundation.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
+    },
+    "\/img\/layout\/allwebcafe-logo.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/layout\/allwebcafe-logo.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/layout\/allwebcafe-logo.png",
+      "initialSize" : 5852,
+      "fileType" : 8192
     },
     "\/css\/vendor\/fancybox\/helpers\/jquery.fancybox-buttons.js" : {
       "ignoreWasSetByUser" : 0,
@@ -444,6 +455,17 @@
       "fileType" : 4,
       "debugStyle" : 1
     },
+    "\/img\/layout\/background-repeat.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/layout\/background-repeat.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/layout\/background-repeat.png",
+      "initialSize" : 982,
+      "fileType" : 8192
+    },
     "\/img\/animation\/btn.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -504,15 +526,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/img\/layout\/ie-icon.png" : {
+    "\/img\/layout\/snowflakes.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/layout\/ie-icon.png",
+      "inputAbbreviatedPath" : "\/img\/layout\/snowflakes.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/layout\/ie-icon.png",
-      "initialSize" : 6193,
+      "outputAbbreviatedPath" : "\/img\/layout\/snowflakes.png",
+      "initialSize" : 15849,
       "fileType" : 8192
     },
     "\/js\/jquery.min.js" : {
@@ -536,6 +558,17 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/js\/fastclick.min.js",
       "fileType" : 64
+    },
+    "\/img\/layout\/ie-icon.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/layout\/ie-icon.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/layout\/ie-icon.png",
+      "initialSize" : 6193,
+      "fileType" : 8192
     },
     "\/img\/fancybox\/fancybox_sprite.png" : {
       "ignoreWasSetByUser" : 0,
