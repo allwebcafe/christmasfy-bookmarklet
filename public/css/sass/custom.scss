@@ -34,44 +34,14 @@
 
 }
 
-/*
-@font-face {
-    font-family: 'nexa_slab_regularregular';
-    src: url('nexaslab-regular-webfont.eot');
-    src: url('nexaslab-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('nexaslab-regular-webfont.woff2') format('woff2'),
-         url('nexaslab-regular-webfont.woff') format('woff'),
-         url('nexaslab-regular-webfont.ttf') format('truetype'),
-         url('nexaslab-regular-webfont.svg#nexa_slab_regularregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-*/
-
-/*
-@font-face {
-    font-family: 'nexa_slab_bookregular';
-    src: url('nexaslab-book-webfont.eot');
-    src: url('nexaslab-book-webfont.eot?#iefix') format('embedded-opentype'),
-         url('nexaslab-book-webfont.woff2') format('woff2'),
-         url('nexaslab-book-webfont.woff') format('woff'),
-         url('nexaslab-book-webfont.ttf') format('truetype'),
-         url('nexaslab-book-webfont.svg#nexa_slab_bookregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-*/
-
 @font-face {
     font-family: 'nexa_slab_heavyregular';
-    src: url('nexaslabheavy-webfont.eot');
-    src: url('nexaslabheavy-webfont.eot?#iefix') format('embedded-opentype'),
-         url('nexaslabheavy-webfont.woff2') format('woff2'),
-         url('nexaslabheavy-webfont.woff') format('woff'),
-         url('nexaslabheavy-webfont.ttf') format('truetype'),
-         url('nexaslabheavy-webfont.svg#nexa_slab_heavyregular') format('svg');
+    src: url('#{$path-font}nexa/nexaslabheavy-webfont.eot');
+    src: url('#{$path-font}nexa/nexaslabheavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$path-font}nexa/nexaslabheavy-webfont.woff2') format('woff2'),
+         url('#{$path-font}nexa/nexaslabheavy-webfont.woff') format('woff'),
+         url('#{$path-font}nexa/nexaslabheavy-webfont.ttf') format('truetype'),
+         url('#{$path-font}nexa/nexaslabheavy-webfont.svg#nexa_slab_heavyregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -79,84 +49,92 @@
 
 /* === Custom Author Styles !Note! These will appear for all level's unless placed in the media query for screen, please use the i8.scss file for that browser === */
 
-h1 { color: $awc-green; font-family: $nexabold; font-size: 35px; text-transform: uppercase; }
 
-h2 { color: #000; font-family: $nexa; font-size: 25px; line-height: 30px; text-transform: uppercase; }
-
-h4 { color: #000; font-family: $opensans; font-size: 18px; }
-
-p { color: $awc-copy-grey; font-family: $opensans; font-size: 18px; }
-
-.awc-wrapper { width: 100%; }
-
-.awc-grey-background { background-color: $awc-grey; }
-
-.how-to { padding-top: 40px; }
-
-#logo-container { padding: auto;
-	.logo { margin: 0 auto; position: relative; display: block; }	
-}
-
-
-.intro-content { padding-bottom: 50px;
-	p { margin-bottom: 50px; }
+/* 0, 640px */
+@media #{$small-up} {
 	
-	.awc-button-large { font-family: $nexaslabheavy; font-size: 25px; text-transform: uppercase; padding: 20px 100px; }
-
-	.awc-red-gradient { color: #fff; background: #b42311 url('#{$path-img}layout/awc-red-gradient.png') top center repeat-x; 
-		&:hover { color: $awc-green; }
+	html, body { background: #fff url('#{$path-img}layout/background-repeat.png') top left repeat-x; }
+	 
+	h1 { color: $awc-green; font-family: $nexabold; font-size: 35px; text-transform: uppercase;
+		.tilde { display: none; }
 	}
 	
-}
+	h2 { color: #000; font-family: $nexa; font-size: 25px; line-height: 30px; text-transform: uppercase; }
 
+	h4 { color: #000; font-family: $opensans; font-size: 18px; }
+	
+	p { color: $awc-copy-grey; font-family: $opensans; font-size: 18px; }
+	
+	.awc-wrapper { width: 100%; }
+	.awc-grey-background { background-color: $awc-grey; margin-top: 30px; }
+	.text-center { text-align: center; } 
+	.how-to { padding-top: 40px; text-align: center; }
+	
+	#logo-container { padding: auto;
+		.logo { margin: 0 auto; position: relative; display: block; }	
+	}
+	
+	.intro-content { padding-bottom: 50px;
+		p { margin-bottom: 50px; }
+		
+		.awc-button-large { font-family: $nexaslabheavy; font-size: 25px; text-decoration: none; text-transform: uppercase; padding: 20px 50px; }
+	
+		.awc-red-gradient { color: #fff; background: #b42311 url('#{$path-img}layout/awc-red-gradient.png') top center repeat-x; 
+			&:hover { color: $awc-green; }
+		}
+		
+	}
+		
+	.imac { position: relative; left: auto; top: auto; width: auto; max-width: 100%; height: auto; margin-top: 75px; }
+	
+	#pinetree-top { height: 81px; background: url('#{$path-img}layout/pinetree-top-repeat.png') top center repeat-x; 
+		img { margin: 0 auto; display: block; }
+	}
 
-
-#pinetree-top { height: 81px; background: url('#{$path-img}layout/pinetree-top-repeat.png') top center repeat-x; }
-
-#horizontal-rule { height: 37px; background: url('#{$path-img}layout/awc-grey-horizontal-rule.png') top center repeat-x; margin: 25px 0 50px; }
-
-#browser-support { margin-top: 40px;
-	ul { list-style: none;
-		li { display: inline-block; height: 90px; width: 90px; text-align: center; vertical-align: baseline; 
-			img { display: block; margin: 0 auto; }
+	#horizontal-rule { height: 37px; background: url('#{$path-img}layout/awc-grey-horizontal-rule.png') top center repeat-x; margin: 25px 0 50px; }
+	
+	#browser-support { margin-top: 40px;
+		ul { list-style: none;
+			li { display: inline-block; text-align: center; vertical-align: text-bottom; height: 90px;
+				img { display: block; margin: 0 auto 5px; vertical-align: top; }
+			}
 		}
 	}
-}
-
-
-
-
-
-
-/* We use this media query to add styles to any device that supports media queries */
-@media #{$screen} { 
+	
+	#awc-happy-holidays { height: 105px; margin: 50px auto;
+		.copy-block { color: $awc-green; font-family: $nexabold; font-size: 15px; letter-spacing: 2px; text-transform: uppercase; text-align: center; }
+		img { display: block; margin: 10px auto 0; }
+	}
 	
 }
 
-/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
-@media #{$small} { 
+/* 641px, 1024px */
+@media only screen and (min-width: 40.063em) {
+	h1 { 
+		.tilde { display: inline; } 
+	}
+
+	
 	
 }
 
-/* Used to alter styles for screens at least 1280px wide. */
-@media #{$medium} {
-
-}
-
-/* Used to alter styles for screens at least 1440px wide. */
-@media #{$large} { 
-
-}
-
-/* Apply styles to screens in landscape orientation */
-@media #{$landscape} { 
+/* 1025px+ */
+@media only screen and (min-width: 64.063em) { 
 	
+	.imac { position: absolute; left: -150%; top: -100px; width: 936px; max-width: 936px; height: 864px; z-index: 100; }
+		
+	.intro-content {
+		.awc-button-large { padding: 20px 100px; }
+	}
+	
+	.how-to { text-align: left; }
+	
+	#awc-happy-holidays { position: relative;
+		.copy-block { position: absolute; top: 44px; }
+	}
+		
 }
 
-/* Apply styles to screens in portrait orientation */
-@media #{$portrait} { 
-	
-}
 
 /* We also use Modernizr to add a .touch class to the body when applicable */
 /* You can prepend this class to anything and it will style only for touch devices */
