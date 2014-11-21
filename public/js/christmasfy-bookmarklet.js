@@ -167,7 +167,7 @@ if($("#awc-shnow").length==0)
 	});
 
 
-	$('body').prepend('<style> body { margin: 0; } #awc-clack { max-width: 360px; display: block; position: absolute; top: 0; left: 0; width: 30%; pointer-events: none; animation: clackers 1s; -webkit-animation: clackers 1s; } @-webkit-keyframes clackers { from {top: -300px;} to {top: 0px;} } @keyframes clackers { from {top: -300px;} to {top: 0px;} } #awc-snow { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url(\'http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/shnow.png\'); background-size: 100%; background-position: right bottom; background-repeat: no-repeat;  } #awc-frost { width: 100%; height: 100%; background-image: url(\'http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/vignette.png\'); background-size: cover; pointer-events: none; animation: awc-vignette-anim 30s; -webkit-animation: awc-vignette-anim 30s; } @media (min-aspect-ratio: 1/1) { #awc-vignette { height: 300%; top: -100%; } } @media (max-aspect-ratio: 1/1) { #awc-vignette { width: 300%; left: -100%; } } @supports (object-fit: cover) { #awc-vignette { top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; } } @-webkit-keyframes awc-vignette-anim { from {opacity: 0;} to {opacity: 1;} } @keyframes awc-vignette-anim { from {opacity: 0;} to {opacity: 1;} } #awc-tree { display: block; position: absolute; width:33%; height:auto; right: 0px; bottom: 0px; pointer-events: none; } #awc-shnow { z-index: 10000; position: fixed; top: 0px; bottom: 0px; right: 0px;  width: 100%; height: 100%;  pointer-events: none; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; animation: awc-shnow-anim 1s; -webkit-animation: awc-shnow-anim 1s; } @-webkit-keyframes awc-shnow-anim { from {bottom: -50%;} to {opacity: 0%;} } @keyframes awc-shnow-anim { from {bottom: -50%;} to {opacity: 0%;} } </style> </canvas> <div id=\'awc-shnow\'> <div id=\'awc-frost\'></div> <div id=\'awc-snow\'></div> <canvas id=\'awc-clack\' width=\'360\' height=\'300\' style=\'top:0px;\'></canvas> <canvas id=\'awc-tree\' width=\'839\' height=\'1400\'></canvas> </div> ');
+	$('body').prepend('<style> body { margin: 0; } #awc-clack { max-width: 360px; display: block; position: absolute; top: 0; left: 0; width: 30%; pointer-events: none; animation: clackers 1s; -webkit-animation: clackers 1s; } @-webkit-keyframes clackers { from {top: -300px;} to {top: 0px;} } @keyframes clackers { from {top: -300px;} to {top: 0px;} } #awc-snow { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url(\'http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/shnow.png\'); background-size: 100%; background-position: right bottom; background-repeat: no-repeat;  } #awc-frost { width: 100%; height: 100%; background-image: url(\'http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/vignette.png\'); background-size: cover; pointer-events: none; animation: awc-vignette-anim 30s; -webkit-animation: awc-vignette-anim 30s; } @media (min-aspect-ratio: 1/1) { #awc-vignette { height: 300%; top: -100%; } } @media (max-aspect-ratio: 1/1) { #awc-vignette { width: 300%; left: -100%; } } @supports (object-fit: cover) { #awc-vignette { top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; } } @-webkit-keyframes awc-vignette-anim { from {opacity: 0;} to {opacity: 1;} } @keyframes awc-vignette-anim { from {opacity: 0;} to {opacity: 1;} } #awc-tree { display: block; position: absolute; width:33%; height: auto; right: -6.5%; bottom: 0px; pointer-events: none; } #awc-shnow { z-index: 10000; position: fixed; top: 0px; bottom: 0px; right: 0px;  width: 100%; height: 100%;  pointer-events: none; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; animation: awc-shnow-anim 1s; -webkit-animation: awc-shnow-anim 1s; } @-webkit-keyframes awc-shnow-anim { from {bottom: -50%;} to {opacity: 0%;} } @keyframes awc-shnow-anim { from {bottom: -50%;} to {opacity: 0%;} } </style> </canvas> <div id=\'awc-shnow\'> <div id=\'awc-frost\'></div> <div id=\'awc-snow\'></div> <canvas id=\'awc-clack\' width=\'360\' height=\'300\' style=\'top:0px;\'></canvas> <canvas id=\'awc-tree\' width=\'839\' height=\'1400\'></canvas> </div> ');
 
 	window.requestAnimFrame = (function()
 	{
@@ -211,6 +211,9 @@ if($("#awc-shnow").length==0)
 	var treePuff = new Image();
 	treePuff.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/puff.png';
 	imagesToLoad++;
+	var needlesPuff = new Image();
+	needlesPuff.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/pine-needles.png';
+	imagesToLoad++;
 
 	var treeLightsOff = new Image();
 	treeLightsOff.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/tree-lights.png';
@@ -224,7 +227,22 @@ if($("#awc-shnow").length==0)
 	imagesToLoad++;
 
 	var box1img = new Image();
-	box1img.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/boxtest.png';
+	box1img.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/gift1.png';
+	imagesToLoad++;
+	var box2img = new Image();
+	box2img.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/gift2.png';
+	imagesToLoad++;
+	var box3img = new Image();
+	box3img.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/gift3.png';
+	imagesToLoad++;
+	var box4img = new Image();
+	box4img.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/gift4.png';
+	imagesToLoad++;
+	var box5img = new Image();
+	box5img.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/gift5.png';
+	imagesToLoad++;
+	var box6img = new Image();
+	box6img.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/gift6.png';
 	imagesToLoad++;
 
 
@@ -235,18 +253,27 @@ if($("#awc-shnow").length==0)
 	images[4].onload = function(){ imageLoaded(); };
 	treeImage.onload = function(){ imageLoaded(); };
 	treePuff.onload = function(){ imageLoaded(); };
+	needlesPuff.onload = function(){ imageLoaded(); };
 	treeLightsOff.onload = function(){ imageLoaded(); };
 	treeLights[0].onload = function(){ imageLoaded(); };
 	treeLights[1].onload = function(){ imageLoaded(); };
 	treeLights[2].onload = function(){ imageLoaded(); };
 	box1img.onload = function(){ imageLoaded(); };
+	box2img.onload = function(){ imageLoaded(); };
+	box3img.onload = function(){ imageLoaded(); };
+	box4img.onload = function(){ imageLoaded(); };
+	box5img.onload = function(){ imageLoaded(); };
+	box6img.onload = function(){ imageLoaded(); };
 
 	var tree = new xmasTree(treeImage, 0.35);
 
 	var treedelay = parseInt(60 * 1);
 	var treeticker = 0;
+	var scalegiftanim = 0.5;
+	var giftdelay = [parseInt(60 * 1.4), parseInt(60 * 1.5), parseInt(60 * 1.6), parseInt(60 * 1.8), parseInt(60 * 1.85), parseInt(60 * 2)];
+	var giftticker = [0, 0, 0, 0, 0, 0];
 
-	var box1 = new box();
+	var gifts = [new box(box1img, 196, awctreecanvas.height-123, 122, 122), new box(box2img, 248, awctreecanvas.height-101, 117, 139), new box(box3img, 445, awctreecanvas.height-110, 157, 145), new box(box4img, 319, awctreecanvas.height-52, 151, 168), new box(box5img, 575, awctreecanvas.height-120, 115, 131), new box(box6img, 530, awctreecanvas.height-80, 116, 128)];
 
 
 	/* OUR CLACKER OBJECT */
@@ -371,12 +398,41 @@ if($("#awc-shnow").length==0)
 		this.puffspeed = 45;
 		this.pufftransp = 1;
 
+		/* FOR NEEDLES */
+		this.needlesactive = false;
+		this.needlesorigin = awctreecanvas.height-300;
+		this.needlesy = this.needlesorigin;
+		this.needlesspeed = 15;
+		this.needlestransp = 0;
+
+		/* FOR TREE ROTATION */
+		this.shake = false;
+		this.maxrotate = 0.35;
+		this.treerotate = 0;
+
 		this.draw = draw;
 		function draw()
 		{
-			var treex = (awctreecanvas.width / 2) - (this.width/2);
-			var treey = awctreecanvas.height - this.height - 147;
+			/* DRAW NEEDLES */
+			if(this.needlesactive)
+			{
+				/* MAKE NEEDLE PUFFS */
+				awctreectx.globalAlpha = this.needlestransp;
+				awctreectx.drawImage(needlesPuff, parseInt(awctreecanvas.width/2 - (this.targetwidth*0.6)), this.needlesy, parseInt(this.targetwidth*1.2), 200);
+				awctreectx.globalAlpha = 1;
+			}
+
+			/* DRAW TREE */
+			awctreectx.save();
+			awctreectx.translate(awctreecanvas.width / 2, awctreecanvas.height - 147);
+
+			awctreectx.rotate((Math.sin(this.treerotate)*this.maxrotate)*Math.PI/180);
+
+			var treex = -(this.width/2);
+			var treey = -this.height;
 			awctreectx.drawImage(this.image, treex, treey, this.width, this.height);
+
+			awctreectx.restore();
 
 			/* DO THE LIGHTS UP WUT WUT */
 			this.drawLights(treex, treey);
@@ -413,11 +469,36 @@ if($("#awc-shnow").length==0)
 			}
 			this.width = this.initialwidth + ((this.targetwidth - this.initialwidth)  * this.ratio);
 			this.height = this.initialheight + ((this.targetheight - this.initialheight)  * this.ratio);
-			this.puffy -= this.puffspeed;
+
 			this.pufftransp -= .075;
-			if(this.pufftransp<0)
+			if(this.pufftransp<=0)
 			{
 				this.pufftransp = 0;
+			}
+			else
+			{
+				this.puffy -= this.puffspeed;
+			}
+
+			if(this.needlesactive)
+			{
+				this.needlestransp -= .04;
+				if(this.needlestransp<=0)
+				{
+					this.needlestransp = 0;
+					this.needlesactive = false;
+				}
+				else
+				{
+					this.needlesy -= this.needlesspeed;
+				}
+			}
+
+			if(this.shake)
+			{
+				//ROTATE TREE
+				this.treerotate += .75;
+				this.shake = false;
 			}
 		}
 
@@ -460,25 +541,44 @@ if($("#awc-shnow").length==0)
 		}
 	}
 
-	function box()
+	function box(image, x, y, width, height)
 	{
-		this.initialwidth = 120;
+		this.image = image;
+		this.initialwidth = width*1.2;
 		this.initialheight = 0;
 		this.width = this.initialwidth;
 		this.height = this.initialheight;
-		this.targetwidth = 100;
-		this.targetheight = 100;
+		this.targetwidth = width;
+		this.targetheight = height;
 		this.scalevel = 0;
-		this.scaleacc = .001;
+		this.scaleacc = .01;
 		this.ratio = 0;
 		this.stopgrow = false;
+		this.x = x;
+		this.y = y;
+		this.jump = 150 + (Math.random()*100);
+
+		/* FOR PUFF */
+		this.puffy = this.y;
+		this.puffspeed = 17;
+		this.pufftransp = 1;
 
 		this.draw = draw;
 		function draw()
 		{
-			var boxx = (awctreecanvas.width / 2) - (this.width/2);
-			var boxy = awctreecanvas.height - this.height - 147;
-			awctreectx.drawImage(box1img, 0, awctreecanvas.height-200, this.width, this.height);
+			var boxx = this.x - (this.width/2);
+			var boxy = this.y - this.height;
+			if(this.ratio>1)
+			{
+				boxy -= (this.ratio - 1) * this.jump;
+			}
+			awctreectx.drawImage(this.image, boxx, boxy, this.width, this.height);
+
+			/* MAKE SNOW PUFFS */
+			var puffx = this.x - (this.targetwidth*0.75);
+			awctreectx.globalAlpha = this.pufftransp;
+			awctreectx.drawImage(treePuff, puffx, this.puffy, parseInt(this.targetwidth*1.2), 75);
+			awctreectx.globalAlpha = 1;
 		}
 
 		this.process = process;
@@ -506,12 +606,12 @@ if($("#awc-shnow").length==0)
 			}
 			this.width = this.initialwidth + ((this.targetwidth - this.initialwidth)  * this.ratio);
 			this.height = this.initialheight + ((this.targetheight - this.initialheight)  * this.ratio);
-			/*this.puffy -= this.puffspeed;
-			this.pufftransp -= .075;
+			this.puffy -= this.puffspeed;
+			this.pufftransp -= .04;
 			if(this.pufftransp<0)
 			{
 				this.pufftransp = 0;
-			}	*/	
+			}	
 		}
 	}
 
@@ -561,6 +661,15 @@ if($("#awc-shnow").length==0)
 						clackers[i].velocityx = rand;
 					}
 				}
+
+				tree.shake = true;
+
+				if(!(tree.needlesactive))
+				{
+					tree.needlesactive = true;
+					tree.needlestransp = 1;
+					tree.needlesy = tree.needlesorigin;
+				}
 			}
 		}
 	}
@@ -584,8 +693,10 @@ if($("#awc-shnow").length==0)
 			clackers[i].draw();
 		}
 		tree.draw();
-		box1.draw();
-		console.log("test");
+		for(var i=0; i<gifts.length; i++)
+		{
+			gifts[i].draw();
+		}
 
 	}
 
@@ -604,7 +715,17 @@ if($("#awc-shnow").length==0)
 		{
 			treeticker++;
 		}
-		box1.process();
+		for(var i=0; i<gifts.length; i++)
+		{
+			if(giftticker[i]==giftdelay[i])
+			{
+				gifts[i].process();
+			}
+			else
+			{
+				giftticker[i]++;
+			}
+		}
 	}
 
 }
