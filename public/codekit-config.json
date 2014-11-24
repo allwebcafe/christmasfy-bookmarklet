@@ -22,17 +22,6 @@
       "initialSize" : 939,
       "fileType" : 8192
     },
-    "\/js\/plugins.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/plugins.min.js",
-      "fileType" : 64
-    },
     "\/js\/plugins\/datatables.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -42,6 +31,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/js\/datatables.min.min.js",
+      "fileType" : 64
+    },
+    "\/js\/plugins.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/plugins.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/plugins.min.js",
       "fileType" : 64
     },
     "\/js\/plugins\/jquery.fancybox.pack.js" : {
@@ -77,14 +77,16 @@
       "initialSize" : 28993,
       "fileType" : 8192
     },
-    "\/css\/ie8-grid-foundation-4.css" : {
+    "\/js\/vendor\/jquery.cookie.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/ie8-grid-foundation-4.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/js\/vendor\/jquery.cookie.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/jquery.cookie.min.js",
+      "fileType" : 64
     },
     "\/img\/layout\/opera-icon.png" : {
       "ignoreWasSetByUser" : 0,
@@ -97,16 +99,14 @@
       "initialSize" : 4825,
       "fileType" : 8192
     },
-    "\/js\/vendor\/jquery.cookie.js" : {
+    "\/css\/ie8-grid-foundation-4.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/vendor\/jquery.cookie.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/jquery.cookie.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/css\/ie8-grid-foundation-4.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/js\/ready.js" : {
       "ignoreWasSetByUser" : 0,
@@ -498,8 +498,8 @@
       "fileType" : 16
     },
     "\/js\/foundation\/foundation.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/foundation\/foundation.js",
