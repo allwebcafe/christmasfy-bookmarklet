@@ -85,7 +85,25 @@
 		
 	}
 		
-	.imac { position: relative; left: auto; top: auto; width: auto; max-width: 100%; height: auto; margin-top: 75px; }
+	.imac { left: auto; top: auto; width: auto; max-width: 100%; height: auto; margin-top: 75px; background-image: url('/img/imac_background.gif'); display: inline-block; position: relative; background-size: 100%;
+		img { display: block; width: 100%; }
+	}
+
+	#imac-snow { background-image: url(/img/imac_snow.png); width: 90.1%; height: 52.8%; position: absolute; top: 0px; left: 0px; margin-left: 5.3%; margin-top: 9.7%;
+	    -webkit-animation: imac-snow-anim 3s linear infinite; animation: imac-snow-anim 3s linear infinite;
+	}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes imac-snow-anim {
+	    0% {background-position-y: 0;}
+	    100% {background-position-y: 490px;}
+	}
+
+	/* Standard syntax */
+	@keyframes imac-snow-anim {
+	    0% {background-position-y: 0;}
+	    100% {background-position-y: 490px;}
+	}
 	
 	#pinetree-top { height: 81px; background: url('#{$path-img}layout/pinetree-top-repeat.png') top center repeat-x; 
 		img { margin: 0 auto; display: block; }
