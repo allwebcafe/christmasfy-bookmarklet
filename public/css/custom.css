@@ -87,7 +87,7 @@
   .intro-content .awc-button-large { padding: 20px 50px; } }
 /* 1025px+ */
 @media only screen and (min-width: 64.063em) { /* line 126, sass/custom.scss */
-  .imac { position: absolute; left: -150%; top: -100px; width: 936px; max-width: 936px; height: 864px; z-index: 100; }
+  .imac { position: absolute; left: -150%; top: -100px; width: 940px; max-width: 940px; height: 864px; z-index: 100; }
   /* line 129, sass/custom.scss */
   .intro-content .awc-button-large { padding: 20px 100px; }
   /* line 132, sass/custom.scss */
