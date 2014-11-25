@@ -692,6 +692,12 @@ if($("#awc-shnow").length==0)
 					tree.needlesy = tree.needlesorigin;
 				}
 			}
+
+			/* ADJUST CANVAS SIZES FOR IE */
+			window.onresize = function() {
+				resizeCanvas();
+			}
+			resizeCanvas();
 		}
 	}
 
@@ -747,6 +753,13 @@ if($("#awc-shnow").length==0)
 				giftticker[i]++;
 			}
 		}
+	}
+
+	/* RESIZE CANVAS ELEMENTS */
+	function resizeCanvas()
+	{		
+		$("#awc-tree").height( ($("#awc-tree").width()/839) * 1400 );
+		$("#awc-clack").height( ($("#awc-clack").width()/360) * 300 );
 	}
 }
 
