@@ -95,14 +95,14 @@
 
 	/* Chrome, Safari, Opera */
 	@-webkit-keyframes imac-snow-anim {
-	    0% {background-position-y: 0;}
-	    100% {background-position-y: 490px;}
+	    0% {background-position: 0 0px;}
+	    100% {background-position: 0 490px;}
 	}
 
 	/* Standard syntax */
 	@keyframes imac-snow-anim {
-	    0% {background-position-y: 0;}
-	    100% {background-position-y: 490px;}
+	    0% {background-position: 0 0px;}
+	    100% {background-position: 0 490px;}
 	}
 	
 	#pinetree-top { height: 81px; background: url('#{$path-img}layout/pinetree-top-repeat.png') top center repeat-x; 

@@ -132,15 +132,15 @@
   /* Chrome, Safari, Opera */
   @-webkit-keyframes imac-snow-anim {
     0% {
-      background-position-y: 0; }
+      background-position: 0 0px; }
     100% {
-      background-position-y: 490px; } }
+      background-position: 0 490px; } }
   /* Standard syntax */
   @keyframes imac-snow-anim {
     0% {
-      background-position-y: 0; }
+      background-position: 0 0px; }
     100% {
-      background-position-y: 490px; } }
+      background-position: 0 490px; } }
   #pinetree-top {
     height: 81px;
     background: url("/christmasfy-bookmarklet/public/img/layout/pinetree-top-repeat.png") top center repeat-x; }
