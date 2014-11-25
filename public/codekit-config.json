@@ -22,17 +22,6 @@
       "initialSize" : 939,
       "fileType" : 8192
     },
-    "\/js\/plugins\/datatables.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins\/datatables.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/datatables.min.min.js",
-      "fileType" : 64
-    },
     "\/js\/plugins.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -42,6 +31,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/js\/plugins.min.js",
+      "fileType" : 64
+    },
+    "\/js\/plugins\/datatables.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/plugins\/datatables.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/datatables.min.min.js",
       "fileType" : 64
     },
     "\/js\/plugins\/jquery.fancybox.pack.js" : {
@@ -77,16 +77,14 @@
       "initialSize" : 28993,
       "fileType" : 8192
     },
-    "\/js\/vendor\/jquery.cookie.js" : {
+    "\/css\/ie8-grid-foundation-4.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/vendor\/jquery.cookie.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/jquery.cookie.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/css\/ie8-grid-foundation-4.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/img\/layout\/opera-icon.png" : {
       "ignoreWasSetByUser" : 0,
@@ -99,24 +97,15 @@
       "initialSize" : 4825,
       "fileType" : 8192
     },
-    "\/css\/ie8-grid-foundation-4.css" : {
+    "\/js\/vendor\/jquery.cookie.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/ie8-grid-foundation-4.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/js\/ready.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/ready.js",
+      "inputAbbreviatedPath" : "\/js\/vendor\/jquery.cookie.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/ready.min.js",
+      "outputAbbreviatedPath" : "\/js\/jquery.cookie.min.js",
       "fileType" : 64
     },
     "\/js\/plugins\/validate.min.js" : {
@@ -128,6 +117,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/js\/validate.min.min.js",
+      "fileType" : 64
+    },
+    "\/js\/ready.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/ready.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/ready.min.js",
       "fileType" : 64
     },
     "\/img\/fancybox\/fancybox_overlay.png" : {
@@ -326,6 +326,17 @@
       "outputAbbreviatedPath" : "\/js\/jquery.fancybox-media.min.js",
       "fileType" : 64
     },
+    "\/img\/animation\/bookmark.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/animation\/bookmark.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/animation\/bookmark.png",
+      "initialSize" : 5555,
+      "fileType" : 8192
+    },
     "\/css\/normalize.min.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -498,8 +509,8 @@
       "fileType" : 16
     },
     "\/js\/foundation\/foundation.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/foundation\/foundation.js",
@@ -589,7 +600,7 @@
       "inputAbbreviatedPath" : "\/img\/layout\/imac.png",
       "processed" : 0,
       "outputAbbreviatedPath" : "\/img\/layout\/imac.png",
-      "initialSize" : 157725,
+      "initialSize" : 867471,
       "fileType" : 8192
     },
     "\/js\/plugins\/awcinfinitescroll.jquery.js" : {

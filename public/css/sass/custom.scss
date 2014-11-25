@@ -77,7 +77,7 @@
 	.intro-content { padding-bottom: 50px;
 		p { margin-bottom: 50px; }
 		
-		.awc-button-large { font-family: $nexaslabheavy; font-size: 25px; text-decoration: none; text-transform: uppercase; padding: 20px 50px; }
+		.awc-button-large { font-family: $nexaslabheavy; font-size: 25px; text-decoration: none; text-transform: uppercase; padding: 20px 25px; }
 	
 		.awc-red-gradient { color: #fff; background: #b42311 url('#{$path-img}layout/awc-red-gradient.png') top center repeat-x; 
 			&:hover { color: $awc-green; }
@@ -114,14 +114,16 @@
 		.tilde { display: inline; } 
 	}
 
-	
+	.intro-content {
+		.awc-button-large { padding: 20px 50px; }
+	}
 	
 }
 
 /* 1025px+ */
 @media only screen and (min-width: 64.063em) { 
 	
-	.imac { position: absolute; left: -150%; top: -100px; width: 936px; max-width: 936px; height: 864px; z-index: 100; }
+	.imac { position: absolute; left: -150%; top: -100px; width: 940px; max-width: 940px; height: 864px; z-index: 100; }
 		
 	.intro-content {
 		.awc-button-large { padding: 20px 100px; }
