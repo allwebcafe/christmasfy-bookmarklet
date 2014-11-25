@@ -77,7 +77,7 @@
 	.intro-content { padding-bottom: 50px;
 		p { margin-bottom: 50px; }
 		
-		.awc-button-large { font-family: $nexaslabheavy; font-size: 25px; text-decoration: none; text-transform: uppercase; padding: 20px 50px; }
+		.awc-button-large { font-family: $nexaslabheavy; font-size: 25px; text-decoration: none; text-transform: uppercase; padding: 20px 25px; }
 	
 		.awc-red-gradient { color: #fff; background: #b42311 url('#{$path-img}layout/awc-red-gradient.png') top center repeat-x; 
 			&:hover { color: $awc-green; }
@@ -114,7 +114,9 @@
 		.tilde { display: inline; } 
 	}
 
-	
+	.intro-content {
+		.awc-button-large { padding: 20px 50px; }
+	}
 	
 }
 
