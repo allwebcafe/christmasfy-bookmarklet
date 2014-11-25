@@ -109,7 +109,7 @@
     max-width: 100%;
     height: auto;
     margin-top: 75px;
-    background-image: url("/img/imac_background.gif");
+    background-image: url("/christmasfy-bookmarklet/public/img//layout/imac_background.gif");
     display: inline-block;
     position: relative;
     background-size: 100%; }
@@ -118,7 +118,7 @@
       width: 100%; }
 
   #imac-snow {
-    background-image: url(/img/imac_snow.png);
+    background-image: url("/christmasfy-bookmarklet/public/img//layout/imac_snow.png");
     width: 90.1%;
     height: 52.8%;
     position: absolute;
