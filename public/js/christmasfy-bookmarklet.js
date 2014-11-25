@@ -67,7 +67,7 @@ if($("#awc-shnow").length==0)
 	if ( document.location.hostname == 'allwebcafe.com' || document.location.hostname == 'www.allwebcafe.com' ) {
 		/* Replace the Hero image with the Christmas-y fireplace and stockings image */
 		$('html, body').animate({ scrollTop: 0 }, 'slow');
-		$('.mc-image').css('background-image', 'url(//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/fp-test.jpg)');
+		$('.mc-image').css('background-image', 'url(//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/fireplace-hero.jpg)');
 		/* Swap out the H1 in the allwebcafe Hero Image with a custom holiday message */
 		$('.mc-image').find('h1').html('Happy Holidays<br /><span class=\x22green-color\x22>from allwebcafe</span><br />');
 		/* Loop through the images on the allwebcafe site. If they are headshots, replace them with Burl Ives' claymation Christmas characters */
