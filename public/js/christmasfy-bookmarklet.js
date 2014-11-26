@@ -1,8 +1,10 @@
 javascript:(function(e,a,g,h,f,c,b,d){if(!(f=e.jQuery)||g>f.fn.jquery||h(f)){c=a.createElement('script');c.type='text/javascript';c.src='//ajax.googleapis.com/ajax/libs/jquery/'+g+'/jquery.min.js';c.onload=c.onreadystatechange=function(){if(!b&&(!(d=this.readyState)||d=='loaded'||d=='complete')){h((f=e.jQuery).noConflict(1),b=1);f(c).remove()}};a.body.appendChild(c)}})(window,document,'1.8',function($,L){  
 
 
+
 if($("#awc-shnow").length==0)
 {
+	$('body').prepend('<style> body { margin: 0; } #awc-logo { position: absolute; left: 20px; bottom: 20px; width: 100%; } #awc-logo a { pointer-events: all; } #awc-logo img { border: 0px; width: 40%; max-width: 220px; } #awc-clack { max-width: 360px; display: block; position: absolute; top: 0; left: 0; width: 30%; pointer-events: none; animation: clackers 1s; -webkit-animation: clackers 1s; } @-webkit-keyframes clackers { from {top: -300px;} to {top: 0px;} } @keyframes clackers { from {top: -300px;} to {top: 0px;} } #awc-snow { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: 100%; background-position: right bottom; background-repeat: no-repeat;  } #awc-frost { width: 100%; height: 100%; background-size: cover; pointer-events: none; animation: awc-vignette-anim 30s; -webkit-animation: awc-vignette-anim 30s; } @media (min-aspect-ratio: 1/1) { #awc-vignette { height: 300%; top: -100%; } } @media (max-aspect-ratio: 1/1) { #awc-vignette { width: 300%; left: -100%; } } @supports (object-fit: cover) { #awc-vignette { top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; } } @-webkit-keyframes awc-vignette-anim { from {opacity: 0;} to {opacity: 1;} } @keyframes awc-vignette-anim { from {opacity: 0;} to {opacity: 1;} } #awc-tree { display: block; position: absolute; width:33%; height: auto; right: -6.5%; bottom: 0px; pointer-events: none; } #awc-shnow { display: none; z-index: 10000; position: fixed; top: 0px; bottom: 0px; right: 0px;  width: 100%; pointer-events: none; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; animation: awc-shnow-anim 1s; -webkit-animation: awc-shnow-anim 1s; } @-webkit-keyframes awc-shnow-anim { from {bottom: -50%;} to {opacity: 0%;} } @keyframes awc-shnow-anim { from {bottom: -50%;} to {opacity: 0%;} } </style> </canvas> <div id=\'awc-shnow\'> <div id=\'awc-frost\'></div> <div id=\'awc-snow\'></div> <canvas id=\'awc-clack\' width=\'360\' height=\'300\' style=\'top:0px;\'></canvas> <canvas id=\'awc-tree\' width=\'839\' height=\'1400\'></canvas> <div id=\'awc-logo\'><a href="http://www.allwebcafe.com" target="_self"><img src=\'//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/allwebcafelogo.png\'/></a></div> </div> ');
 
 	/* LET IT SNOW */
 	flakeCount = 30;
@@ -65,7 +67,7 @@ if($("#awc-shnow").length==0)
 	if ( document.location.hostname == 'allwebcafe.com' || document.location.hostname == 'www.allwebcafe.com' ) {
 		/* Replace the Hero image with the Christmas-y fireplace and stockings image */
 		$('html, body').animate({ scrollTop: 0 }, 'slow');
-		$('.mc-image').css('background-image', 'url(//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/fp-test.jpg)');
+		$('.mc-image').css('background-image', 'url(//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/fireplace-hero.jpg)');
 		/* Swap out the H1 in the allwebcafe Hero Image with a custom holiday message */
 		$('.mc-image').find('h1').html('Happy Holidays<br /><span class=\x22green-color\x22>from allwebcafe</span><br />');
 		/* Loop through the images on the allwebcafe site. If they are headshots, replace them with Burl Ives' claymation Christmas characters */
@@ -167,7 +169,6 @@ if($("#awc-shnow").length==0)
 	});
 
 
-	$('body').prepend('<style> body { margin: 0; } #awc-clack { max-width: 360px; display: block; position: absolute; top: 0; left: 0; width: 30%; pointer-events: none; animation: clackers 1s; -webkit-animation: clackers 1s; } @-webkit-keyframes clackers { from {top: -300px;} to {top: 0px;} } @keyframes clackers { from {top: -300px;} to {top: 0px;} } #awc-snow { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url(\'http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/shnow.png\'); background-size: 100%; background-position: right bottom; background-repeat: no-repeat;  } #awc-frost { width: 100%; height: 100%; background-image: url(\'http://www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/vignette.png\'); background-size: cover; pointer-events: none; animation: awc-vignette-anim 30s; -webkit-animation: awc-vignette-anim 30s; } @media (min-aspect-ratio: 1/1) { #awc-vignette { height: 300%; top: -100%; } } @media (max-aspect-ratio: 1/1) { #awc-vignette { width: 300%; left: -100%; } } @supports (object-fit: cover) { #awc-vignette { top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; } } @-webkit-keyframes awc-vignette-anim { from {opacity: 0;} to {opacity: 1;} } @keyframes awc-vignette-anim { from {opacity: 0;} to {opacity: 1;} } #awc-tree { display: block; position: absolute; width:33%; height: auto; right: -6.5%; bottom: 0px; pointer-events: none; } #awc-shnow { z-index: 10000; position: fixed; top: 0px; bottom: 0px; right: 0px;  width: 100%; height: 100%;  pointer-events: none; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; animation: awc-shnow-anim 1s; -webkit-animation: awc-shnow-anim 1s; } @-webkit-keyframes awc-shnow-anim { from {bottom: -50%;} to {opacity: 0%;} } @keyframes awc-shnow-anim { from {bottom: -50%;} to {opacity: 0%;} } </style> </canvas> <div id=\'awc-shnow\'> <div id=\'awc-frost\'></div> <div id=\'awc-snow\'></div> <canvas id=\'awc-clack\' width=\'360\' height=\'300\' style=\'top:0px;\'></canvas> <canvas id=\'awc-tree\' width=\'839\' height=\'1400\'></canvas> </div> ');
 
 	window.requestAnimFrame = (function()
 	{
@@ -246,6 +247,14 @@ if($("#awc-shnow").length==0)
 	imagesToLoad++;
 
 
+	var awc_shnow_img = new Image();
+	awc_shnow_img.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/shnow.png';
+	imagesToLoad++;
+	var awc_frost_img = new Image();
+	awc_frost_img.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/vignette.png';
+	imagesToLoad++;
+
+
 	images[0].onload = function(){ imageLoaded(); };
 	images[1].onload = function(){ imageLoaded(); };
 	images[2].onload = function(){ imageLoaded(); };
@@ -264,6 +273,8 @@ if($("#awc-shnow").length==0)
 	box4img.onload = function(){ imageLoaded(); };
 	box5img.onload = function(){ imageLoaded(); };
 	box6img.onload = function(){ imageLoaded(); };
+	awc_shnow_img.onload = function(){ imageLoaded(); };
+	awc_frost_img.onload = function(){ imageLoaded(); };
 
 	/* OUR CLACKER OBJECT */
 	function circle(x, y, pointx, pointy, radius, image)
@@ -389,10 +400,12 @@ if($("#awc-shnow").length==0)
 
 		/* FOR NEEDLES */
 		this.needlesactive = false;
-		this.needlesorigin = awctreecanvas.height-300;
+		this.needlesorigin = awctreecanvas.height-650;
 		this.needlesy = this.needlesorigin;
-		this.needlesspeed = 15;
+		this.needlesspeed = 10;
 		this.needlestransp = 0;
+		this.needlesscale = 0.5;
+		this.needlesscalespeed = 0.04;
 
 		/* FOR TREE ROTATION */
 		this.shake = false;
@@ -407,7 +420,7 @@ if($("#awc-shnow").length==0)
 			{
 				/* MAKE NEEDLE PUFFS */
 				awctreectx.globalAlpha = this.needlestransp;
-				awctreectx.drawImage(needlesPuff, parseInt(awctreecanvas.width/2 - (this.targetwidth*0.6)), this.needlesy, parseInt(this.targetwidth*1.2), 200);
+				awctreectx.drawImage(needlesPuff, parseInt(awctreecanvas.width/2 - (this.targetwidth*(this.needlesscale/2))), this.needlesy, parseInt(this.targetwidth*this.needlesscale), 200);
 				awctreectx.globalAlpha = 1;
 			}
 
@@ -471,15 +484,17 @@ if($("#awc-shnow").length==0)
 
 			if(this.needlesactive)
 			{
-				this.needlestransp -= .04;
+				this.needlestransp -= .03;
 				if(this.needlestransp<=0)
 				{
 					this.needlestransp = 0;
 					this.needlesactive = false;
+					this.needlesscale = 0.5;
 				}
 				else
 				{
-					this.needlesy -= this.needlesspeed;
+					this.needlesy += this.needlesspeed;
+					this.needlesscale += this.needlesscalespeed;
 				}
 			}
 
@@ -646,6 +661,10 @@ if($("#awc-shnow").length==0)
 		if(imagesLoaded == imagesToLoad)
 		{
 
+			$('#awc-shnow').css({'display':'block'});
+			$('#awc-snow').css({'background-image':'url(\''+awc_shnow_img.src+'\')'});
+			$('#awc-frost').css({'background-image':'url(\''+awc_frost_img.src+'\')'});
+
 			/* DRAW TREE */
 			enterFrame();
 
@@ -673,6 +692,12 @@ if($("#awc-shnow").length==0)
 					tree.needlesy = tree.needlesorigin;
 				}
 			}
+
+			/* ADJUST CANVAS SIZES FOR IE */
+			window.onresize = function() {
+				resizeCanvas();
+			}
+			resizeCanvas();
 		}
 	}
 
@@ -730,6 +755,12 @@ if($("#awc-shnow").length==0)
 		}
 	}
 
+	/* RESIZE CANVAS ELEMENTS */
+	function resizeCanvas()
+	{		
+		$("#awc-tree").height( ($("#awc-tree").width()/839) * 1400 );
+		$("#awc-clack").height( ($("#awc-clack").width()/360) * 300 );
+	}
 }
 
 

@@ -326,6 +326,17 @@
       "outputAbbreviatedPath" : "\/js\/jquery.fancybox-media.min.js",
       "fileType" : 64
     },
+    "\/img\/animation\/bookmark.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/animation\/bookmark.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/animation\/bookmark.png",
+      "initialSize" : 5555,
+      "fileType" : 8192
+    },
     "\/css\/normalize.min.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -498,8 +509,8 @@
       "fileType" : 16
     },
     "\/js\/foundation\/foundation.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/foundation\/foundation.js",
@@ -589,7 +600,7 @@
       "inputAbbreviatedPath" : "\/img\/layout\/imac.png",
       "processed" : 0,
       "outputAbbreviatedPath" : "\/img\/layout\/imac.png",
-      "initialSize" : 157725,
+      "initialSize" : 867471,
       "fileType" : 8192
     },
     "\/js\/plugins\/awcinfinitescroll.jquery.js" : {
