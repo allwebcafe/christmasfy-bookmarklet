@@ -1,10 +1,10 @@
 javascript:(function(e,a,g,h,f,c,b,d){if(!(f=e.jQuery)||g>f.fn.jquery||h(f)){c=a.createElement('script');c.type='text/javascript';c.src='//ajax.googleapis.com/ajax/libs/jquery/'+g+'/jquery.min.js';c.onload=c.onreadystatechange=function(){if(!b&&(!(d=this.readyState)||d=='loaded'||d=='complete')){h((f=e.jQuery).noConflict(1),b=1);f(c).remove()}};a.body.appendChild(c)}})(window,document,'1.8',function($,L){  
 
-
+var AWCHOST = '//allwebcafe.github.io/christmasfy-your-website-bookmarklet/assets/';
 
 if($("#awc-shnow").length==0)
 {
-	$('body').prepend('<style> body { margin: 0; } #awc-logo { position: absolute; left: 20px; bottom: 20px; width: 100%; } #awc-logo a { pointer-events: all; } #awc-logo img { border: 0px; width: 40%; max-width: 220px; } #awc-clack { max-width: 360px; display: block; position: absolute; top: 0; left: 0; width: 30%; pointer-events: none; animation: clackers 1s; -webkit-animation: clackers 1s; } @-webkit-keyframes clackers { from {top: -300px;} to {top: 0px;} } @keyframes clackers { from {top: -300px;} to {top: 0px;} } #awc-snow { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: 100%; background-position: right bottom; background-repeat: no-repeat;  } #awc-frost { width: 100%; height: 100%; background-size: cover; pointer-events: none; animation: awc-vignette-anim 30s; -webkit-animation: awc-vignette-anim 30s; } @media (min-aspect-ratio: 1/1) { #awc-vignette { height: 300%; top: -100%; } } @media (max-aspect-ratio: 1/1) { #awc-vignette { width: 300%; left: -100%; } } @supports (object-fit: cover) { #awc-vignette { top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; } } @-webkit-keyframes awc-vignette-anim { from {opacity: 0;} to {opacity: 1;} } @keyframes awc-vignette-anim { from {opacity: 0;} to {opacity: 1;} } #awc-tree { display: block; position: absolute; width:33%; height: auto; right: -6.5%; bottom: 0px; pointer-events: none; } #awc-shnow { display: none; z-index: 10000; position: fixed; top: 0px; bottom: 0px; right: 0px;  width: 100%; pointer-events: none; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; animation: awc-shnow-anim 1s; -webkit-animation: awc-shnow-anim 1s; } @-webkit-keyframes awc-shnow-anim { from {bottom: -50%;} to {opacity: 0%;} } @keyframes awc-shnow-anim { from {bottom: -50%;} to {opacity: 0%;} } </style> </canvas> <div id=\'awc-shnow\'> <div id=\'awc-frost\'></div> <div id=\'awc-snow\'></div> <canvas id=\'awc-clack\' width=\'360\' height=\'300\' style=\'top:0px;\'></canvas> <canvas id=\'awc-tree\' width=\'839\' height=\'1400\'></canvas> <div id=\'awc-logo\'><a href="http://www.allwebcafe.com" target="_self"><img src=\'//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/allwebcafelogo.png\'/></a></div> </div> ');
+	$('body').prepend('<style> body { margin: 0; } #awc-logo { position: absolute; left: 20px; bottom: 20px; width: 100%; } #awc-logo a { pointer-events: all; } #awc-logo img { border: 0px; width: 40%; max-width: 220px; } #awc-clack { max-width: 360px; display: block; position: absolute; top: 0; left: 0; width: 30%; pointer-events: none; animation: clackers 1s; -webkit-animation: clackers 1s; } @-webkit-keyframes clackers { from {top: -300px;} to {top: 0px;} } @keyframes clackers { from {top: -300px;} to {top: 0px;} } #awc-snow { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: 100%; background-position: right bottom; background-repeat: no-repeat;  } #awc-frost { width: 100%; height: 100%; background-size: cover; pointer-events: none; animation: awc-vignette-anim 30s; -webkit-animation: awc-vignette-anim 30s; } @media (min-aspect-ratio: 1/1) { #awc-vignette { height: 300%; top: -100%; } } @media (max-aspect-ratio: 1/1) { #awc-vignette { width: 300%; left: -100%; } } @supports (object-fit: cover) { #awc-vignette { top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; } } @-webkit-keyframes awc-vignette-anim { from {opacity: 0;} to {opacity: 1;} } @keyframes awc-vignette-anim { from {opacity: 0;} to {opacity: 1;} } #awc-tree { display: block; position: absolute; width:33%; height: auto; right: -6.5%; bottom: 0px; pointer-events: none; } #awc-shnow { display: none; z-index: 10000; position: fixed; top: 0px; bottom: 0px; right: 0px;  width: 100%; pointer-events: none; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; animation: awc-shnow-anim 1s; -webkit-animation: awc-shnow-anim 1s; } @-webkit-keyframes awc-shnow-anim { from {bottom: -50%;} to {opacity: 0%;} } @keyframes awc-shnow-anim { from {bottom: -50%;} to {opacity: 0%;} } </style> </canvas> <div id=\'awc-shnow\'> <div id=\'awc-frost\'></div> <div id=\'awc-snow\'></div> <canvas id=\'awc-clack\' width=\'360\' height=\'300\' style=\'top:0px;\'></canvas> <canvas id=\'awc-tree\' width=\'839\' height=\'1400\'></canvas> <div id=\'awc-logo\'><a href="http://www.allwebcafe.com" target="_self"><img src=\''+AWCHOST+'allwebcafelogo.png\'/></a></div> </div> ');
 
 	/* LET IT SNOW */
 	flakeCount = 30;
@@ -190,15 +190,15 @@ if($("#awc-shnow").length==0)
 	var ctx	= canvas.getContext('2d');
 
 	var images = [new Image(), new Image(), new Image(), new Image(), new Image()];
-	images[0].src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/orn1.png';
+	images[0].src = AWCHOST+'orn1.png';
 	imagesToLoad++;
-	images[1].src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/orn2.png';
+	images[1].src = AWCHOST+'orn2.png';
 	imagesToLoad++;
-	images[2].src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/orn3.png';
+	images[2].src = AWCHOST+'orn3.png';
 	imagesToLoad++;
-	images[3].src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/orn4.png';
+	images[3].src = AWCHOST+'orn4.png';
 	imagesToLoad++;
-	images[4].src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/orn5.png';
+	images[4].src = AWCHOST+'orn5.png';
 	imagesToLoad++;
 
 	/*****************************************************************/
@@ -206,52 +206,52 @@ if($("#awc-shnow").length==0)
 	var awctreectx	= awctreecanvas.getContext('2d');
 
 	var treeImage = new Image();
-	treeImage.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/tree.png';
+	treeImage.src = AWCHOST+'tree.png';
 	imagesToLoad++;
 
 	var treePuff = new Image();
-	treePuff.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/puff.png';
+	treePuff.src = AWCHOST+'puff.png';
 	imagesToLoad++;
 	var needlesPuff = new Image();
-	needlesPuff.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/pine-needles.png';
+	needlesPuff.src = AWCHOST+'pine-needles.png';
 	imagesToLoad++;
 
 	var treeLightsOff = new Image();
-	treeLightsOff.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/tree-lights.png';
+	treeLightsOff.src = AWCHOST+'tree-lights.png';
 	imagesToLoad++;
 	var treeLights = [new Image(), new Image(), new Image()];
-	treeLights[0].src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/tree-lights0.png';
+	treeLights[0].src = AWCHOST+'tree-lights0.png';
 	imagesToLoad++;
-	treeLights[1].src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/tree-lights1.png';
+	treeLights[1].src = AWCHOST+'tree-lights1.png';
 	imagesToLoad++;
-	treeLights[2].src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/tree-lights2.png';
+	treeLights[2].src = AWCHOST+'tree-lights2.png';
 	imagesToLoad++;
 
 	var box1img = new Image();
-	box1img.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/gift1.png';
+	box1img.src = AWCHOST+'gift1.png';
 	imagesToLoad++;
 	var box2img = new Image();
-	box2img.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/gift2.png';
+	box2img.src = AWCHOST+'gift2.png';
 	imagesToLoad++;
 	var box3img = new Image();
-	box3img.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/gift3.png';
+	box3img.src = AWCHOST+'gift3.png';
 	imagesToLoad++;
 	var box4img = new Image();
-	box4img.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/gift4.png';
+	box4img.src = AWCHOST+'gift4.png';
 	imagesToLoad++;
 	var box5img = new Image();
-	box5img.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/gift5.png';
+	box5img.src = AWCHOST+'gift5.png';
 	imagesToLoad++;
 	var box6img = new Image();
-	box6img.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/gift6.png';
+	box6img.src = AWCHOST+'gift6.png';
 	imagesToLoad++;
 
 
 	var awc_shnow_img = new Image();
-	awc_shnow_img.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/shnow.png';
+	awc_shnow_img.src = AWCHOST+'shnow.png';
 	imagesToLoad++;
 	var awc_frost_img = new Image();
-	awc_frost_img.src = '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/vignette.png';
+	awc_frost_img.src = AWCHOST+'vignette.png';
 	imagesToLoad++;
 
 
