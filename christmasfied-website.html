@@ -1,0 +1,85 @@
+<?php
+$url = "";
+
+// IF NO URL WAS GIVEN, REDIRECT BACK TO CHRISTMASFY
+if(!isset($_POST["url"]) || trim($_POST["url"])=="")
+{
+	//header('Location: http://www.allwebcafe.james/labs/christmasfy-your-website');
+	//die();
+}
+else {
+
+	//	USE $url AS OUR URL SENT THROUGH POST.  IF IT HAS NO PROTOCOL, ASSUME ITS HTTP
+	$url = $_POST["url"];
+
+	if(strpos(strtolower($url), "http")===false)
+	{
+		$url = "http://".$_POST["url"];
+	}
+}
+?>
+<html>
+<head>
+<title>Christmasfy Your Website | <?php echo $url; ?></title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/public/css/normalize.min.css" />
+<link rel="stylesheet" href="/public/css/foundation.min.css" />
+<link rel="stylesheet" href="/public/css/labs/christmasfy-your-website/custom.css" />
+<style>
+body {
+	margin: 0;
+	height: 100%;
+	background-image: none;
+}
+
+#load-container {
+	position:absolute; 
+	z-index:1;
+	height: 100%;
+	width: 100%;
+	background-image: url('/public/img/christmasfy-your-website/layout/iframe-loader.gif');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#loading {
+	display: none;
+}
+
+#externalWebsite {
+	position: absolute; 
+	overflow:auto; 
+	z-index:2;
+}
+
+#awc-shnow {
+	pointer-events: none;
+}
+</style>
+</head>
+<body>
+ <div style="display:relative">
+ 	<div id="load-container">
+ 		<div id="loading">
+ 			<img src="/public/img/christmasfy-your-website/layout/iframe-loader.gif"/>
+ 		</div>
+ 	</div> 
+    <iframe id="externalWebsite" src="<?php echo $url; ?>" width="100%" height="100%"></iframe></div>
+<script>
+
+var loaded = false;
+
+document.getElementById("externalWebsite").onload = function() {
+
+	if(!loaded)
+	{
+		loaded = true;
+
+		var jsCode = document.createElement('script'); jsCode.setAttribute('src', 'https://allwebcafe.github.io/christmasfy-your-website-bookmarklet/christmasfy-bookmarklet.min.js'); document.body.appendChild(jsCode);
+
+	}
+}
+</script>
+</body>
+</html>

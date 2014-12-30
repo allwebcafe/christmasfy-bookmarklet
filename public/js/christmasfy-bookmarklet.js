@@ -1,13 +1,38 @@
 javascript:(function(e,a,g,h,f,c,b,d){if(!(f=e.jQuery)||g>f.fn.jquery||h(f)){c=a.createElement('script');c.type='text/javascript';c.src='//ajax.googleapis.com/ajax/libs/jquery/'+g+'/jquery.min.js';c.onload=c.onreadystatechange=function(){if(!b&&(!(d=this.readyState)||d=='loaded'||d=='complete')){h((f=e.jQuery).noConflict(1),b=1);f(c).remove()}};a.body.appendChild(c)}})(window,document,'1.8',function($,L){  
 
 var AWCHOST = '//allwebcafe.github.io/christmasfy-your-website-bookmarklet/assets/';
+var isMobile = {
+    Android: function() {
+        return /Android/i.test(navigator.userAgent);
+    },
+    BlackBerry: function() {
+        return /BlackBerry/i.test(navigator.userAgent);
+    },
+    iOS: function() {
+        return /iPhone|iPad|iPod/i.test(navigator.userAgent);
+    },
+    Windows: function() {
+        return /IEMobile/i.test(navigator.userAgent);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+    }
+};
 
 if($("#awc-shnow").length==0)
 {
-	$('body').prepend('<style> body { margin: 0; } #awc-logo { position: absolute; left: 20px; bottom: 20px; width: 100%; } #awc-logo a { pointer-events: all; } #awc-logo img { border: 0px; width: 40%; max-width: 220px; } #awc-clack { max-width: 360px; display: block; position: absolute; top: 0; left: 0; width: 30%; pointer-events: none; animation: clackers 1s; -webkit-animation: clackers 1s; } @-webkit-keyframes clackers { from {top: -300px;} to {top: 0px;} } @keyframes clackers { from {top: -300px;} to {top: 0px;} } #awc-snow { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: 100%; background-position: right bottom; background-repeat: no-repeat;  } #awc-frost { width: 100%; height: 100%; background-size: cover; pointer-events: none; animation: awc-vignette-anim 30s; -webkit-animation: awc-vignette-anim 30s; } @media (min-aspect-ratio: 1/1) { #awc-vignette { height: 300%; top: -100%; } } @media (max-aspect-ratio: 1/1) { #awc-vignette { width: 300%; left: -100%; } } @supports (object-fit: cover) { #awc-vignette { top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; } } @-webkit-keyframes awc-vignette-anim { from {opacity: 0;} to {opacity: 1;} } @keyframes awc-vignette-anim { from {opacity: 0;} to {opacity: 1;} } #awc-tree { display: block; position: absolute; width:33%; height: auto; right: -6.5%; bottom: 0px; pointer-events: none; } #awc-shnow { display: none; z-index: 10000; position: fixed; top: 0px; bottom: 0px; right: 0px;  width: 100%; pointer-events: none; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; animation: awc-shnow-anim 1s; -webkit-animation: awc-shnow-anim 1s; } @-webkit-keyframes awc-shnow-anim { from {bottom: -50%;} to {opacity: 0%;} } @keyframes awc-shnow-anim { from {bottom: -50%;} to {opacity: 0%;} } </style> </canvas> <div id=\'awc-shnow\'> <div id=\'awc-frost\'></div> <div id=\'awc-snow\'></div> <canvas id=\'awc-clack\' width=\'360\' height=\'300\' style=\'top:0px;\'></canvas> <canvas id=\'awc-tree\' width=\'839\' height=\'1400\'></canvas> <div id=\'awc-logo\'><a href="http://www.allwebcafe.com" target="_self"><img src=\''+AWCHOST+'allwebcafelogo.png\'/></a></div> </div> ');
+	$('body').prepend('<style> body { margin: 0; } #awc-logo { position: absolute; left: 20px; bottom: 20px; width: 100%; } #awc-logo a { pointer-events: all; } #awc-logo img { border: 0px; width: 40%; max-width: 220px; } #awc-clack { max-width: 360px; display: block; position: absolute; top: 0; left: 0; width: 30%; pointer-events: none; animation: clackers 1s; -webkit-animation: clackers 1s; } @-webkit-keyframes clackers { from {top: -300px;} to {top: 0px;} } @keyframes clackers { from {top: -300px;} to {top: 0px;} } #awc-snow { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: 100%; background-position: right bottom; background-repeat: no-repeat;  } #awc-frost { width: 100%; height: 100%; background-size: cover; pointer-events: none; animation: awc-vignette-anim 30s; -webkit-animation: awc-vignette-anim 30s; } @media (min-aspect-ratio: 1/1) { #awc-vignette { height: 300%; top: -100%; } } @media (max-aspect-ratio: 1/1) { #awc-vignette { width: 300%; left: -100%; } } @supports (object-fit: cover) { #awc-vignette { top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; } } @-webkit-keyframes awc-vignette-anim { from {opacity: 0;} to {opacity: 1;} } @keyframes awc-vignette-anim { from {opacity: 0;} to {opacity: 1;} } #awc-tree { display: block; position: absolute; width:33%; height: auto; right: -6.5%; bottom: 0px; pointer-events: none; } #awc-shnow { display: none; z-index: 10000; position: fixed; top: 0px; bottom: 0px; right: 0px;  width: 100%; pointer-events: none; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; animation: awc-shnow-anim 1s; -webkit-animation: awc-shnow-anim 1s; } @-webkit-keyframes awc-shnow-anim { from {bottom: -50%;} to {opacity: 0%;} } @keyframes awc-shnow-anim { from {bottom: -50%;} to {opacity: 0%;} } </style> <div id=\'awc-shnow\'> <div id=\'awc-frost\'></div> <div id=\'awc-snow\'></div> <canvas id=\'awc-clack\' width=\'360\' height=\'300\' style=\'top:0px;\'></canvas> <canvas id=\'awc-tree\' width=\'839\' height=\'1400\'></canvas> <div id=\'awc-logo\'><a href="http://www.allwebcafe.com" target="_self"><img src=\''+AWCHOST+'allwebcafelogo.png\'/></a></div> </div> ');
 
 	/* LET IT SNOW */
-	flakeCount = 30;
+	flakeCount = 0;
+	if(isMobile.any())
+	{
+		flakeCount = 10;
+	}
+	else
+	{
+		flakeCount = 30;
+	}
 	var snowflakeImg = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAiCAYAAABIiGl0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0RjlFQjg3RDY0MkYxMUU0OUYxQTk4MEJDNDI3MUVEMyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0RjlFQjg3RTY0MkYxMUU0OUYxQTk4MEJDNDI3MUVEMyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjRGOUVCODdCNjQyRjExRTQ5RjFBOTgwQkM0MjcxRUQzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjRGOUVCODdDNjQyRjExRTQ5RjFBOTgwQkM0MjcxRUQzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+frm4bAAAA65JREFUeNrM13toTnEcx/HdXDLD1oQxlzINzTW3P1xym3vKZC6lxB9za63EH4uaS25/uZS7XLdFIhTSWCyXmIRhbGxhRMPcGY/3V58npxN5ztO2nHr1nPOc3+93zu/+PaE+ny8kyOOEfscFkzkiiDyz0Axx+I4FaIoVnkqxGns0Bt9Q7ft9TPFaTpjH2o5ED0ThDkrRAq11L+Aj1GMfd0EhrqMRfuAdBiERxYEW5KXG4eiDfrinmvdCBbpjjPq6xmrcXrWxhKfQFUW4Yfn1ArF4iVRU4S4eBzq4lmMP4jAVUeiEZLxECS460l9HoeM6B5WowgjljVJZcSp7pT+9TafdaKD+s7eOx0K8wBn1aaxMRwzeolJ9bEdLbMYUXdvU6q0Bt1CD0KZfTw3MGOvjAjWl9dN73fiAa5iEg9iAj+rDVA2ieF3nYw7qK42lzVHeayorSl2QhAnIs2rH46DmozXfC1cTmjAswReUotwxh5/iHl5h7R/mbKHKPI+3OItWdiMNV9ED6Y4CLUESQpW5RP+XIVz/3dC5/16xzu1FW+CMo7zVaK3KbfLXpjmOoAIZGIwiZZiH2ziGxfovRIPlsM6/Y5kG6BOV4VN5wzBXrWIVbItof3NEYxdSXM00AZ9UyA79l62XOK7znWodu7deaT9imqusIdiOmF9T2HVzr6OQCPWr9Wm+3j5fL/NQtXyiKTRV+V4rzQNkIVJlFSDP+Sz3gxPwWU1m1xf0YP/9dbipvvQf1iK3sN+R7pH62s7nK13i3zYJm8spmr+ZOKTVx1auK9iKam2lCY58DbX0lmGL0rbDJeRiI55jop7hea2u2cPV1B3woS6a2v3gk7hSl4MrWkN9Yl1OJ1tAYlVYuZrG6wLyA0uRqSU0oAUkTc1rS+aqIJfM+7pXpQeEB7JktleT2Vtf/scm8VV9XuraJO6or7f/YZOwBz13bxIR2ocTFU1UaA4v06AfqFDHtsDZGKu0a3Afb/AFZ7W9HsEnlOMyLmqrnIwMNEFHjLYHz1TEaKFNYwVvNtH74zRuK9YKUQCQKwcUCCQrEEjQ/mxx9lVkYYiCwi76tbLOYag1RRM1SZYj9EnV6OuKkY7QpyDA0Ge48jbFDA2wXRpDv9L/F8Hev9hInYlu2OYYXNka/emqYUDleQ3oOyuOeqYWqNT304DaDOjtaIOV6IuviMQwLFKX1OpH2ygto9+0XlcH89EWzGeqTbPlGI962Ofan2vlo83fPTZ/jyooCOrD/KcAAwCotU9/uXNufgAAAABJRU5ErkJggg==';
 
 	function Flake() {
@@ -64,26 +89,82 @@ if($("#awc-shnow").length==0)
 
 	letItSnow();
 
-	if ( document.location.hostname == 'allwebcafe.com' || document.location.hostname == 'www.allwebcafe.com' ) {
+	if (document.location.hostname.search('allwebcafe.') >= 0) {
 		/* Replace the Hero image with the Christmas-y fireplace and stockings image */
 		$('html, body').animate({ scrollTop: 0 }, 'slow');
-		$('.mc-image').css('background-image', 'url(//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/fireplace-hero.jpg)');
-		/* Swap out the H1 in the allwebcafe Hero Image with a custom holiday message */
-		$('.mc-image').find('h1').html('Happy Holidays<br /><span class=\x22green-color\x22>from allwebcafe</span><br />');
+
+		/* is this in a iframe or from the bookmarklet? */
+		if ($('#externalWebsite').is(':visible')) {
+			if ($('#externalWebsite').attr('src').search('allwebcafe') >= 0) {
+				var mcImgs = $('#externalWebsite').contents().find('.mc-image');
+				var imgs = $('#externalWebsite').contents().find('img');
+			} else {
+				var mcImgs = $('.mc-image');
+				var imgs = $('img');
+			}
+			
+		} else {
+			var mcImgs = $('.mc-image');
+			var imgs = $('img');
+		}
+
+		mcImgs.each(function() {
+			if ( $(this).css('background-image').indexOf('1-bg-brand-strategy.jpg') > -1 ) {
+				$(this).css('background-image', 'url(//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/fireplace-hero.jpg)');
+				$(this).find('.green-color').hide();
+				$(this).find('h2').html('Happy Holidays<br /><span class=\x22green-color\x22>from allwebcafe</span><br />');
+				$(this).find('.homepage-hero-subhdr').html('Brand Strategy That Informs');
+			} else if ( $(this).css('background-image').indexOf('2-bg-digital-experiences.jpg') > -1 ) {
+				/* $(this).css('background-image', 'url(//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/allweb-snow-house.jpg)'); */
+				$(this).css('background-image', 'url(//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/lantern.jpg)');
+				$(this).find('.green-color').hide();
+				$(this).find('h2').html('Happy Holidays<br /><span class=\x22green-color\x22>from allwebcafe</span><br />');
+				$(this).find('.homepage-hero-subhdr').html('Digital Experiences That Engage');
+			} else if ( $(this).css('background-image').indexOf('3-bg-content-marketing.jpg') > -1 ) {
+				$(this).css('background-image', 'url(//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/pointsetta.jpg)');
+				$(this).find('.green-color').hide();
+				$(this).find('h2').html('Happy Holidays<br /><span class=\x22green-color\x22>from allwebcafe</span><br />');
+				$(this).find('.homepage-hero-subhdr').html('Content Marketing That Connects');
+			}
+		});
+		
 		/* Loop through the images on the allwebcafe site. If they are headshots, replace them with Burl Ives' claymation Christmas characters */
-		$('img').each(function() {
+		imgs.each(function() {
 			if ( $(this).attr('src') == '/images/member_photos/photo_10.jpg' ) { /* If this is Brandon Morse */
 				$(this).attr('src', '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/brandon-morse.jpg');
+				$(this).next().children('h4').html('Yukon Cornelius');
+				$(this).next().children('p').html('&nbsp;');
+				$(this).next().children('.about-team').html('Yukon is portrayed as a boisterous prospector whose goal is to find silver and gold to get rich quick. In the end, he becomes the proud owner of a new peppermint mine near Santa\'s workshop.');
+				
 			} else if ( $(this).attr('src') == '/images/member_photos/photo_17.jpg' ) { /* If this is Jan Waldeck */
 				$(this).attr('src', '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/jan-waldeck.jpg');
+				$(this).next().children('h4').html('Abominable Snowman');
+				$(this).next().children('p').html('&nbsp;');
+				$(this).next().children('.about-team').html('His plans to eat Rudolph\'s friends were foiled by being knocked unconscience and having his teeth extracted by Hermey. Then to add insult to injury, Yukon drove him off the edge of a cliff!');
+				
 			} else if ( $(this).attr('src') == '/images/member_photos/photo_23.jpg' ) { /* If this is Paul Manz */
 				$(this).attr('src', '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/paul-manz.jpg');
+				$(this).next().children('h4').html('Sam the Snowman');
+				$(this).next().children('p').html('&nbsp;');
+				$(this).next().children('.about-team').html('The narrator, voiced by and closely resembles folk singer Burl Ives, who contributes several tunes throughout the program.');
+				
 			} else if ( $(this).attr('src') == '/images/member_photos/photo_16.jpg' ) { /* If this is Nekeidra Filinov */
 				$(this).attr('src', '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/nekeidra-filinov.jpg');
+				$(this).next().children('h4').html('Dolly for Sue');
+				$(this).next().children('p').html('&nbsp;');
+				$(this).next().children('.about-team').html('Voiced by Corinne Conley and is a seemingly normal girl rag doll with red hair and a red gingham dress.');
+				
 			} else if ( $(this).attr('src') == '/images/member_photos/photo_26.jpg' ) { /* If this is Kristin Conran */
 				$(this).attr('src', '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/kristin-conran.jpg');
+				$(this).next().children('h4').html('Clarice Reindeer');
+				$(this).next().children('p').html('&nbsp;');
+				$(this).next().children('.about-team').html('Although real reindeer of both sexes grow antlers, neither Clarice nor any other doe in the special has antlers. Also setting them apart, the female reindeer have much lighter fur than their male counterparts.');
+				
 			} else if ( $(this).attr('src') == '/images/member_photos/photo_4.jpg' ) { /* If this is Steve Williams */
 				$(this).attr('src', '//www.allwebcafe.com/public/images/labs/christmasfy-bookmarklet/steve-williams.jpg');
+				$(this).next().children('h4').html('Santa Claus');
+				$(this).next().children('p').html('&nbsp;');
+				$(this).next().children('.about-team').html('Is caught by Rudolph\'s gleaming nose and decides that its light could cut through the storm. Enabling him to deliver presents to all the good boys and girls.');
 			}
 		});
 	} 
@@ -188,6 +269,7 @@ if($("#awc-shnow").length==0)
 
 	var canvas = document.getElementById('awc-clack');
 	var ctx	= canvas.getContext('2d');
+
 
 	var images = [new Image(), new Image(), new Image(), new Image(), new Image()];
 	images[0].src = AWCHOST+'orn1.png';
@@ -685,7 +767,7 @@ if($("#awc-shnow").length==0)
 
 				tree.shake = true;
 
-				if(!(tree.needlesactive))
+				if(!(tree.needlesactive)&&tree.ratio==1)
 				{
 					tree.needlesactive = true;
 					tree.needlestransp = 1;
@@ -705,6 +787,13 @@ if($("#awc-shnow").length==0)
 	function enterFrame()
 	{
 		process();
+		if(isMobile.any())
+		{
+			for(var j=0; j<6; j++)
+			{
+				process();
+			}
+		}
 		draw();
 		window.requestAnimFrame(enterFrame);
 	}

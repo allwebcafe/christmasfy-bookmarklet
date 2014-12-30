@@ -54,7 +54,7 @@
 @media #{$small-up} {
 	
 	html, body { background: #fff url('#{$path-img}layout/background-repeat.png') top left repeat-x; }
-	 
+	
 	h1 { color: $awc-green; font-family: $nexabold; font-size: 35px; text-transform: uppercase;
 		.tilde { display: none; }
 	}
@@ -65,27 +65,47 @@
 	
 	p { color: $awc-copy-grey; font-family: $opensans; font-size: 18px; }
 	
+	input[type="text"] { height: 45px; font-size: 18px; padding: 5px 10px; margin-bottom: 20px; background-color: #ececec; border-left: 2px solid #ccc; border-bottom: 2px solid #ccc; }
+	
 	.awc-wrapper { width: 100%; }
-	.awc-grey-background { background-color: $awc-grey; margin-top: 30px; }
+	.awc-grey-background { background-color: $awc-grey; margin-top: 50px; }
+	
+	.awc-button { text-decoration: none; text-transform: uppercase; } 
+	.awc-button-small { display: inline-block; font-family: $nexaslabheavy; font-size: 18px; padding: 15px 30px; }
+	.awc-button-large { font-family: $nexaslabheavy; font-size: 25px; padding: 10px 100px; }
+	
 	.text-center { text-align: center; } 
-	.how-to { padding-top: 40px; text-align: center; }
+	.how-to { padding-top: 16px; text-align: center;
+		p { margin-bottom: 13px } }
 	
 	#logo-container { padding: auto;
-		.logo { margin: 0 auto; position: relative; display: block; }	
+		.logo { margin: 0 auto; position: relative; display: block; padding-bottom: 9px;}	
 	}
 	
-	.intro-content { padding-bottom: 50px;
-		p { margin-bottom: 50px; }
+	.social-media-icons { list-style: none; margin: 0; padding: 0;
+		li { display: inline; margin: 0 5px; 
+			&:first-child { margin-left: 0; }
+			&:last-child { margin-right: 0; }
+		}
 		
-		.awc-button-large { font-family: $nexaslabheavy; font-size: 25px; text-decoration: none; text-transform: uppercase; padding: 20px 25px; }
+	}
 	
+	.intro-content { padding-bottom: 42px;
+		h1 { margin-bottom: 0px; }
+
+		p { margin-top: 12px; margin-bottom: 28px; }
+
+		p.form-error { color: #ff0000; display: none; }
+
+		p.form-error.show { display: block; }
+		
 		.awc-red-gradient { color: #fff; background: #b42311 url('#{$path-img}layout/awc-red-gradient.png') top center repeat-x; 
-			&:hover { color: $awc-green; }
+			&:hover { background: #5a8f33 url('#{$path-img}layout/awc-green-gradient.png') top center repeat-x; }
 		}
 		
 	}
 		
-	.imac { left: auto; top: auto; width: auto; max-width: 100%; height: auto; margin-top: 75px; background-image: url('#{$path-img}/layout/imac_background.gif'); display: inline-block; position: relative; background-size: 100%;
+	.imac { left: auto; top: auto; width: auto; max-width: 100%; height: auto; margin-top: 55px; background-image: url('#{$path-img}/layout/imac_background.gif'); display: inline-block; position: relative; background-size: 100%;
 		img { display: block; width: 100%; }
 	}
 
@@ -109,9 +129,11 @@
 		img { margin: 0 auto; display: block; }
 	}
 
-	#horizontal-rule { height: 37px; background: url('#{$path-img}layout/awc-grey-horizontal-rule.png') top center repeat-x; margin: 25px 0 50px; }
+	#horizontal-rule { height: 37px; background: url('#{$path-img}layout/awc-grey-horizontal-rule.png') top center repeat-x; margin: 25px 0 16px; }
 	
-	#browser-support { margin-top: 40px;
+	#browser-support { margin-top: 5px;
+		h4 { margin-bottom: 16px; }
+
 		ul { list-style: none;
 			li { display: inline-block; text-align: center; vertical-align: text-bottom; height: 90px;
 				img { display: block; margin: 0 auto 5px; vertical-align: top; }
@@ -132,25 +154,23 @@
 		.tilde { display: inline; } 
 	}
 
-	.intro-content {
-		.awc-button-large { padding: 20px 50px; }
-	}
-	
 }
 
 /* 1025px+ */
 @media only screen and (min-width: 64.063em) { 
 	
 	.imac { position: absolute; left: -150%; top: -100px; width: 940px; max-width: 940px; height: 864px; z-index: 100; }
-		
+	
 	.intro-content {
-		.awc-button-large { padding: 20px 100px; }
+		.awc-button-large { display: inline-block !important; }
 	}
 	
-	.how-to { text-align: left; }
+	.how-to { text-align: left; 
+		.center-wrapper { left: -270px !important; }
+	}
 	
 	#awc-happy-holidays { position: relative;
-		.copy-block { position: absolute; top: 44px; }
+		.copy-block { position: absolute; top: 44px; text-align: right; padding-top: 36px; right: 600px;}
 	}
 		
 }

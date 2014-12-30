@@ -16,16 +16,16 @@
 /* Colors */
 /* Fonts */
 /* === Custom SASS Functions or Includes === */
-@font-face { font-family: 'nexa_lightregular'; src: url("/christmasfy-bookmarklet/public/fonts/nexa/Nexa_Free_Light-webfont.eot"); src: url("/christmasfy-bookmarklet/public/fonts/nexa/Nexa_Free_Light-webfont.eot?#iefix") format("embedded-opentype"), url("/christmasfy-bookmarklet/public/fonts/nexa/Nexa_Free_Light-webfont.woff") format("woff"), url("/christmasfy-bookmarklet/public/fonts/nexa/Nexa_Free_Light-webfont.ttf") format("truetype"), url("/christmasfy-bookmarklet/public/fonts/nexa/Nexa_Free_Light-webfont.svg#nexa_lightregular") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'nexa_lightregular'; src: url("/public/fonts/nexa/Nexa_Free_Light-webfont.eot"); src: url("/public/fonts/nexa/Nexa_Free_Light-webfont.eot?#iefix") format("embedded-opentype"), url("/public/fonts/nexa/Nexa_Free_Light-webfont.woff") format("woff"), url("/public/fonts/nexa/Nexa_Free_Light-webfont.ttf") format("truetype"), url("/public/fonts/nexa/Nexa_Free_Light-webfont.svg#nexa_lightregular") format("svg"); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: 'nexa_boldregular'; src: url("/christmasfy-bookmarklet/public/fonts/nexa/Nexa_Free_Bold-webfont.eot"); src: url("/christmasfy-bookmarklet/public/fonts/nexa/Nexa_Free_Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/christmasfy-bookmarklet/public/fonts/nexa/Nexa_Free_Bold-webfont.woff") format("woff"), url("/christmasfy-bookmarklet/public/fonts/nexa/Nexa_Free_Bold-webfont.ttf") format("truetype"), url("/christmasfy-bookmarklet/public/fonts/nexa/Nexa_Free_Bold-webfont.svg#nexa_boldregular") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'nexa_boldregular'; src: url("/public/fonts/nexa/Nexa_Free_Bold-webfont.eot"); src: url("/public/fonts/nexa/Nexa_Free_Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/public/fonts/nexa/Nexa_Free_Bold-webfont.woff") format("woff"), url("/public/fonts/nexa/Nexa_Free_Bold-webfont.ttf") format("truetype"), url("/public/fonts/nexa/Nexa_Free_Bold-webfont.svg#nexa_boldregular") format("svg"); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: 'nexa_slab_heavyregular'; src: url("/christmasfy-bookmarklet/public/fonts/nexa/nexaslabheavy-webfont.eot"); src: url("/christmasfy-bookmarklet/public/fonts/nexa/nexaslabheavy-webfont.eot?#iefix") format("embedded-opentype"), url("/christmasfy-bookmarklet/public/fonts/nexa/nexaslabheavy-webfont.woff2") format("woff2"), url("/christmasfy-bookmarklet/public/fonts/nexa/nexaslabheavy-webfont.woff") format("woff"), url("/christmasfy-bookmarklet/public/fonts/nexa/nexaslabheavy-webfont.ttf") format("truetype"), url("/christmasfy-bookmarklet/public/fonts/nexa/nexaslabheavy-webfont.svg#nexa_slab_heavyregular") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'nexa_slab_heavyregular'; src: url("/public/fonts/nexa/nexaslabheavy-webfont.eot"); src: url("/public/fonts/nexa/nexaslabheavy-webfont.eot?#iefix") format("embedded-opentype"), url("/public/fonts/nexa/nexaslabheavy-webfont.woff2") format("woff2"), url("/public/fonts/nexa/nexaslabheavy-webfont.woff") format("woff"), url("/public/fonts/nexa/nexaslabheavy-webfont.ttf") format("truetype"), url("/public/fonts/nexa/nexaslabheavy-webfont.svg#nexa_slab_heavyregular") format("svg"); font-weight: normal; font-style: normal; }
 
 /* === Custom Author Styles !Note! These will appear for all level's unless placed in the media query for screen, please use the i8.scss file for that browser === */
 /* 0, 640px */
 @media only screen { /* line 56, sass/custom.scss */
-  html, body { background: white url("/christmasfy-bookmarklet/public/img/layout/background-repeat.png") top left repeat-x; }
+  html, body { background: white url("/public/img/christmasfy-your-website/layout/background-repeat.png") top left repeat-x; }
   /* line 58, sass/custom.scss */
   h1 { color: #83a14d; font-family: "nexa_boldregular"; font-size: 35px; text-transform: uppercase; }
   /* line 59, sass/custom.scss */
@@ -37,195 +37,219 @@
   /* line 66, sass/custom.scss */
   p { color: #333333; font-family: "Open Sans"; font-size: 18px; }
   /* line 68, sass/custom.scss */
-  .awc-wrapper { width: 100%; }
-  /* line 69, sass/custom.scss */
-  .awc-grey-background { background-color: #efefef; margin-top: 30px; }
+  input[type="text"] { height: 45px; font-size: 18px; padding: 5px 10px; margin-bottom: 20px; background-color: #ececec; border-left: 2px solid #ccc; border-bottom: 2px solid #ccc; }
   /* line 70, sass/custom.scss */
-  .text-center { text-align: center; }
+  .awc-wrapper { width: 100%; }
   /* line 71, sass/custom.scss */
-  .how-to { padding-top: 40px; text-align: center; }
+  .awc-grey-background { background-color: #efefef; margin-top: 50px; }
   /* line 73, sass/custom.scss */
-  #logo-container { padding: auto; }
+  .awc-button { text-decoration: none; text-transform: uppercase; }
   /* line 74, sass/custom.scss */
-  #logo-container .logo { margin: 0 auto; position: relative; display: block; }
+  .awc-button-small { display: inline-block; font-family: "nexa_slab_heavyregular"; font-size: 18px; padding: 15px 30px; }
+  /* line 75, sass/custom.scss */
+  .awc-button-large { font-family: "nexa_slab_heavyregular"; font-size: 25px; padding: 10px 100px; }
   /* line 77, sass/custom.scss */
-  .intro-content { padding-bottom: 50px; }
+  .text-center { text-align: center; }
   /* line 78, sass/custom.scss */
-  .intro-content p { margin-bottom: 50px; }
-  /* line 80, sass/custom.scss */
-  .intro-content .awc-button-large { font-family: "nexa_slab_heavyregular"; font-size: 25px; text-decoration: none; text-transform: uppercase; padding: 20px 25px; }
+  .how-to { padding-top: 16px; text-align: center; }
+  /* line 79, sass/custom.scss */
+  .how-to p { margin-bottom: 13px; }
+  /* line 81, sass/custom.scss */
+  #logo-container { padding: auto; }
   /* line 82, sass/custom.scss */
-  .intro-content .awc-red-gradient { color: #fff; background: #b42311 url("/christmasfy-bookmarklet/public/img/layout/awc-red-gradient.png") top center repeat-x; }
-  /* line 83, sass/custom.scss */
-  .intro-content .awc-red-gradient:hover { color: #83a14d; }
+  #logo-container .logo { margin: 0 auto; position: relative; display: block; padding-bottom: 9px; }
+  /* line 85, sass/custom.scss */
+  .social-media-icons { list-style: none; margin: 0; padding: 0; }
+  /* line 86, sass/custom.scss */
+  .social-media-icons li { display: inline; margin: 0 5px; }
+  /* line 87, sass/custom.scss */
+  .social-media-icons li:first-child { margin-left: 0; }
   /* line 88, sass/custom.scss */
-  .imac { left: auto; top: auto; width: auto; max-width: 100%; height: auto; margin-top: 75px; background-image: url("/christmasfy-bookmarklet/public/img//layout/imac_background.gif"); display: inline-block; position: relative; background-size: 100%; }
-  /* line 89, sass/custom.scss */
+  .social-media-icons li:last-child { margin-right: 0; }
+  /* line 93, sass/custom.scss */
+  .intro-content { padding-bottom: 42px; }
+  /* line 94, sass/custom.scss */
+  .intro-content h1 { margin-bottom: 0px; }
+  /* line 96, sass/custom.scss */
+  .intro-content p { margin-top: 12px; margin-bottom: 28px; }
+  /* line 98, sass/custom.scss */
+  .intro-content p.form-error { color: #ff0000; display: none; }
+  /* line 100, sass/custom.scss */
+  .intro-content p.form-error.show { display: block; }
+  /* line 102, sass/custom.scss */
+  .intro-content .awc-red-gradient { color: #fff; background: #b42311 url("/public/img/christmasfy-your-website/layout/awc-red-gradient.png") top center repeat-x; }
+  /* line 103, sass/custom.scss */
+  .intro-content .awc-red-gradient:hover { background: #5a8f33 url("/public/img/christmasfy-your-website/layout/awc-green-gradient.png") top center repeat-x; }
+  /* line 108, sass/custom.scss */
+  .imac { left: auto; top: auto; width: auto; max-width: 100%; height: auto; margin-top: 55px; background-image: url("/public/img/christmasfy-your-website//layout/imac_background.gif"); display: inline-block; position: relative; background-size: 100%; }
+  /* line 109, sass/custom.scss */
   .imac img { display: block; width: 100%; }
-  /* line 92, sass/custom.scss */
-  #imac-snow { background-image: url("/christmasfy-bookmarklet/public/img//layout/imac_snow.png"); width: 90.1%; height: 52.8%; position: absolute; top: 0px; left: 0px; margin-left: 5.3%; margin-top: 9.7%; -webkit-animation: imac-snow-anim 3s linear infinite; animation: imac-snow-anim 3s linear infinite; }
+  /* line 112, sass/custom.scss */
+  #imac-snow { background-image: url("/public/img/christmasfy-your-website//layout/imac_snow.png"); width: 90.1%; height: 52.8%; position: absolute; top: 0px; left: 0px; margin-left: 5.3%; margin-top: 9.7%; -webkit-animation: imac-snow-anim 3s linear infinite; animation: imac-snow-anim 3s linear infinite; }
   /* Chrome, Safari, Opera */
-  @-webkit-keyframes imac-snow-anim { /* line 98, sass/custom.scss */
+  @-webkit-keyframes imac-snow-anim { /* line 118, sass/custom.scss */
     0% { background-position: 0 0px; }
-    /* line 99, sass/custom.scss */
+    /* line 119, sass/custom.scss */
     100% { background-position: 0 490px; } }
   /* Standard syntax */
-  @keyframes imac-snow-anim { /* line 104, sass/custom.scss */
+  @keyframes imac-snow-anim { /* line 124, sass/custom.scss */
     0% { background-position: 0 0px; }
-    /* line 105, sass/custom.scss */
+    /* line 125, sass/custom.scss */
     100% { background-position: 0 490px; } }
-  /* line 108, sass/custom.scss */
-  #pinetree-top { height: 81px; background: url("/christmasfy-bookmarklet/public/img/layout/pinetree-top-repeat.png") top center repeat-x; }
-  /* line 109, sass/custom.scss */
+  /* line 128, sass/custom.scss */
+  #pinetree-top { height: 81px; background: url("/public/img/christmasfy-your-website/layout/pinetree-top-repeat.png") top center repeat-x; }
+  /* line 129, sass/custom.scss */
   #pinetree-top img { margin: 0 auto; display: block; }
-  /* line 112, sass/custom.scss */
-  #horizontal-rule { height: 37px; background: url("/christmasfy-bookmarklet/public/img/layout/awc-grey-horizontal-rule.png") top center repeat-x; margin: 25px 0 50px; }
-  /* line 114, sass/custom.scss */
-  #browser-support { margin-top: 40px; }
-  /* line 115, sass/custom.scss */
+  /* line 132, sass/custom.scss */
+  #horizontal-rule { height: 37px; background: url("/public/img/christmasfy-your-website/layout/awc-grey-horizontal-rule.png") top center repeat-x; margin: 25px 0 16px; }
+  /* line 134, sass/custom.scss */
+  #browser-support { margin-top: 5px; }
+  /* line 135, sass/custom.scss */
+  #browser-support h4 { margin-bottom: 16px; }
+  /* line 137, sass/custom.scss */
   #browser-support ul { list-style: none; }
-  /* line 116, sass/custom.scss */
+  /* line 138, sass/custom.scss */
   #browser-support ul li { display: inline-block; text-align: center; vertical-align: text-bottom; height: 90px; }
-  /* line 117, sass/custom.scss */
+  /* line 139, sass/custom.scss */
   #browser-support ul li img { display: block; margin: 0 auto 5px; vertical-align: top; }
-  /* line 122, sass/custom.scss */
+  /* line 144, sass/custom.scss */
   #awc-happy-holidays { height: 105px; margin: 50px auto; }
-  /* line 123, sass/custom.scss */
+  /* line 145, sass/custom.scss */
   #awc-happy-holidays .copy-block { color: #83a14d; font-family: "nexa_boldregular"; font-size: 15px; letter-spacing: 2px; text-transform: uppercase; text-align: center; }
-  /* line 124, sass/custom.scss */
+  /* line 146, sass/custom.scss */
   #awc-happy-holidays img { display: block; margin: 10px auto 0; } }
 /* 641px, 1024px */
-@media only screen and (min-width: 40.063em) { /* line 132, sass/custom.scss */
-  h1 .tilde { display: inline; }
-  /* line 136, sass/custom.scss */
-  .intro-content .awc-button-large { padding: 20px 50px; } }
+@media only screen and (min-width: 40.063em) { /* line 154, sass/custom.scss */
+  h1 .tilde { display: inline; } }
 /* 1025px+ */
-@media only screen and (min-width: 64.063em) { /* line 144, sass/custom.scss */
+@media only screen and (min-width: 64.063em) { /* line 162, sass/custom.scss */
   .imac { position: absolute; left: -150%; top: -100px; width: 940px; max-width: 940px; height: 864px; z-index: 100; }
-  /* line 147, sass/custom.scss */
-  .intro-content .awc-button-large { padding: 20px 100px; }
-  /* line 150, sass/custom.scss */
+  /* line 165, sass/custom.scss */
+  .intro-content .awc-button-large { display: inline-block !important; }
+  /* line 168, sass/custom.scss */
   .how-to { text-align: left; }
-  /* line 152, sass/custom.scss */
+  /* line 169, sass/custom.scss */
+  .how-to .center-wrapper { left: -270px !important; }
+  /* line 172, sass/custom.scss */
   #awc-happy-holidays { position: relative; }
-  /* line 153, sass/custom.scss */
-  #awc-happy-holidays .copy-block { position: absolute; top: 44px; } }
+  /* line 173, sass/custom.scss */
+  #awc-happy-holidays .copy-block { position: absolute; top: 44px; text-align: right; padding-top: 36px; right: 600px; } }
 /* We also use Modernizr to add a .touch class to the body when applicable */
 /* You can prepend this class to anything and it will style only for touch devices */
 /* === 3rd Party Styles === */
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
-/* line 177, sass/custom.scss */
+/* line 197, sass/custom.scss */
 .fancybox-wrap, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image, .fancybox-wrap iframe, .fancybox-wrap object, .fancybox-nav, .fancybox-nav span, .fancybox-tmp { padding: 0; margin: 0; border: 0; outline: none; vertical-align: top; }
 
-/* line 185, sass/custom.scss */
+/* line 205, sass/custom.scss */
 .fancybox-wrap { position: absolute; top: 0; left: 0; z-index: 8020; }
 
-/* line 192, sass/custom.scss */
+/* line 212, sass/custom.scss */
 .fancybox-skin { position: relative; background: #f9f9f9; color: #444; text-shadow: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
 
-/* line 202, sass/custom.scss */
+/* line 222, sass/custom.scss */
 .fancybox-opened { z-index: 8030; }
 
-/* line 206, sass/custom.scss */
+/* line 226, sass/custom.scss */
 .fancybox-opened .fancybox-skin { -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); }
 
-/* line 212, sass/custom.scss */
+/* line 232, sass/custom.scss */
 .fancybox-outer, .fancybox-inner { position: relative; }
 
-/* line 216, sass/custom.scss */
+/* line 236, sass/custom.scss */
 .fancybox-inner { overflow: hidden; }
 
-/* line 220, sass/custom.scss */
+/* line 240, sass/custom.scss */
 .fancybox-type-iframe .fancybox-inner { -webkit-overflow-scrolling: touch; }
 
-/* line 224, sass/custom.scss */
+/* line 244, sass/custom.scss */
 .fancybox-error { color: #444; font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif; margin: 0; padding: 15px; white-space: nowrap; }
 
-/* line 232, sass/custom.scss */
+/* line 252, sass/custom.scss */
 .fancybox-image, .fancybox-iframe { display: block; width: 100%; height: 100%; }
 
-/* line 238, sass/custom.scss */
+/* line 258, sass/custom.scss */
 .fancybox-image { max-width: 100%; max-height: 100%; }
 
-/* line 243, sass/custom.scss */
-#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span { background-image: url("/christmasfy-bookmarklet/public/img/fancybox/fancybox_sprite.png"); }
+/* line 263, sass/custom.scss */
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span { background-image: url("/public/img/christmasfy-your-website/fancybox/fancybox_sprite.png"); }
 
-/* line 247, sass/custom.scss */
+/* line 267, sass/custom.scss */
 #fancybox-loading { position: fixed; top: 50%; left: 50%; margin-top: -22px; margin-left: -22px; background-position: 0 -108px; opacity: 0.8; cursor: pointer; z-index: 8060; }
 
-/* line 259, sass/custom.scss */
-#fancybox-loading div { width: 44px; height: 44px; background: url("/christmasfy-bookmarklet/public/img/fancybox/fancybox_loading.gif") center center no-repeat; }
+/* line 279, sass/custom.scss */
+#fancybox-loading div { width: 44px; height: 44px; background: url("/public/img/christmasfy-your-website/fancybox/fancybox_loading.gif") center center no-repeat; }
 
-/* line 265, sass/custom.scss */
+/* line 285, sass/custom.scss */
 .fancybox-close { position: absolute; top: -18px; right: -18px; width: 36px; height: 36px; cursor: pointer; z-index: 8040; }
 
-/* line 275, sass/custom.scss */
-.fancybox-nav { position: absolute; top: 0; width: 40%; height: 100%; cursor: pointer; text-decoration: none; background: transparent url("/christmasfy-bookmarklet/public/img/blank.gif"); /* helps IE */ -webkit-tap-highlight-color: rgba(0, 0, 0, 0); z-index: 8040; }
+/* line 295, sass/custom.scss */
+.fancybox-nav { position: absolute; top: 0; width: 40%; height: 100%; cursor: pointer; text-decoration: none; background: transparent url("/public/img/christmasfy-your-website/blank.gif"); /* helps IE */ -webkit-tap-highlight-color: rgba(0, 0, 0, 0); z-index: 8040; }
 
-/* line 287, sass/custom.scss */
+/* line 307, sass/custom.scss */
 .fancybox-prev { left: 0; }
 
-/* line 291, sass/custom.scss */
+/* line 311, sass/custom.scss */
 .fancybox-next { right: 0; }
 
-/* line 295, sass/custom.scss */
+/* line 315, sass/custom.scss */
 .fancybox-nav span { position: absolute; top: 50%; width: 36px; height: 34px; margin-top: -18px; cursor: pointer; z-index: 8040; visibility: hidden; }
 
-/* line 306, sass/custom.scss */
+/* line 326, sass/custom.scss */
 .fancybox-prev span { left: 10px; background-position: 0 -36px; }
 
-/* line 311, sass/custom.scss */
+/* line 331, sass/custom.scss */
 .fancybox-next span { right: 10px; background-position: 0 -72px; }
 
-/* line 316, sass/custom.scss */
+/* line 336, sass/custom.scss */
 .fancybox-nav:hover span { visibility: visible; }
 
-/* line 320, sass/custom.scss */
+/* line 340, sass/custom.scss */
 .fancybox-tmp { position: absolute; top: -99999px; left: -99999px; visibility: hidden; max-width: 99999px; max-height: 99999px; overflow: visible !important; }
 
 /* Overlay helper */
-/* line 332, sass/custom.scss */
+/* line 352, sass/custom.scss */
 .fancybox-lock { overflow: hidden !important; width: auto; }
 
-/* line 337, sass/custom.scss */
+/* line 357, sass/custom.scss */
 .fancybox-lock body { overflow: hidden !important; }
 
-/* line 341, sass/custom.scss */
+/* line 361, sass/custom.scss */
 .fancybox-lock-test { overflow-y: hidden !important; }
 
-/* line 345, sass/custom.scss */
-.fancybox-overlay { position: absolute; top: 0; left: 0; overflow: hidden; display: none; z-index: 8010; background: url("/christmasfy-bookmarklet/public/img/fancybox/fancybox_overlay.png"); }
+/* line 365, sass/custom.scss */
+.fancybox-overlay { position: absolute; top: 0; left: 0; overflow: hidden; display: none; z-index: 8010; background: url("/public/img/christmasfy-your-website/fancybox/fancybox_overlay.png"); }
 
-/* line 355, sass/custom.scss */
+/* line 375, sass/custom.scss */
 .fancybox-overlay-fixed { position: fixed; bottom: 0; right: 0; }
 
-/* line 361, sass/custom.scss */
+/* line 381, sass/custom.scss */
 .fancybox-lock .fancybox-overlay { overflow: auto; overflow-y: scroll; }
 
 /* Title helper */
-/* line 368, sass/custom.scss */
+/* line 388, sass/custom.scss */
 .fancybox-title { visibility: hidden; font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif; position: relative; text-shadow: none; z-index: 8050; }
 
-/* line 376, sass/custom.scss */
+/* line 396, sass/custom.scss */
 .fancybox-opened .fancybox-title { visibility: visible; }
 
-/* line 380, sass/custom.scss */
+/* line 400, sass/custom.scss */
 .fancybox-title-float-wrap { position: absolute; bottom: 0; right: 50%; margin-bottom: -35px; z-index: 8050; text-align: center; }
 
-/* line 389, sass/custom.scss */
+/* line 409, sass/custom.scss */
 .fancybox-title-float-wrap .child { display: inline-block; margin-right: -100%; padding: 2px 20px; background: transparent; /* Fallback for web browsers that doesn't support RGBa */ background: rgba(0, 0, 0, 0.8); -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; text-shadow: 0 1px 2px #222; color: #FFF; font-weight: bold; line-height: 24px; white-space: nowrap; }
 
-/* line 405, sass/custom.scss */
+/* line 425, sass/custom.scss */
 .fancybox-title-outside-wrap { position: relative; margin-top: 10px; color: #fff; }
 
-/* line 411, sass/custom.scss */
+/* line 431, sass/custom.scss */
 .fancybox-title-inside-wrap { padding-top: 10px; }
 
-/* line 415, sass/custom.scss */
+/* line 435, sass/custom.scss */
 .fancybox-title-over-wrap { position: absolute; bottom: 0; left: 0; color: #fff; padding: 10px; background: #000; background: rgba(0, 0, 0, 0.8); }
 
 /*Retina graphics!*/
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { /* line 430, sass/custom.scss */
-  #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span { background-image: url("/christmasfy-bookmarklet/public/img/fancybox/fancybox_sprite@2x.png"); background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image*/ }
-  /* line 435, sass/custom.scss */
-  #fancybox-loading div { background-image: url("/christmasfy-bookmarklet/public/img/fancybox/fancybox_loading@2x.gif"); background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/ } }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { /* line 450, sass/custom.scss */
+  #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span { background-image: url("/public/img/christmasfy-your-website/fancybox/fancybox_sprite@2x.png"); background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image*/ }
+  /* line 455, sass/custom.scss */
+  #fancybox-loading div { background-image: url("/public/img/christmasfy-your-website/fancybox/fancybox_loading@2x.gif"); background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/ } }
